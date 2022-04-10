@@ -171,6 +171,7 @@ html {
     padding-left: 10px;
     opacity: 80%;
     background-image: linear-gradient(to top , #001125 5% , #83dcef ,#ef8354 );
+    cursor: pointer;
     transition: .5s;
 }
 #canvaswindow{
@@ -798,14 +799,15 @@ html {
 /* ----------------Sigma Side--------------------------- */
 
 #contentHere{
-    width:200px;
-    min-height:200px; 
-    position: relative;
-    z-index: 1;
+    width: 85%;
+    height: 770px;
     padding: 15px;
-    /* top:50px; */
-    left: -290px;
+    position: absolute;
+    top:50px;
+    left: 55px;
+    z-index: 1;
     /* background-color: red; */
+    overflow: auto;
 }
 
 /* ----------------Sigma Side background--------------------------- */
@@ -931,8 +933,8 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
 /* --------------------- up Botton ------------------ */
 #upBotton{
     position: fixed;
-    right: 100px;
-    bottom: 140px;
+    right: 35px;
+    bottom: 90px;
     width: 59px;
     height: 60px;
     border-radius: 15px;
@@ -973,7 +975,7 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
 /* ---------------------------------------------------- */
 #footer{
     
-    height: 114px;
+    height: 80px;
     background-color: #001125;
     border-top: 3px solid #8be7f942;
     border-bottom: 3px solid #8be7f942;
@@ -984,7 +986,7 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
 
 #footerContain{
     width: 1100px;
-    height: 108px;
+    height: 74px;
     background-color: #001125;
     display: flex;
     justify-content: space-between;

@@ -664,4 +664,81 @@ upBotton.onclick = function () {
 
 
 
+//-----------------delete just for test --------------------
 
+let containerDiv = document.querySelector(".container")
+let tasksDiv = document.querySelector(".tasks")
+let subBtn = document.querySelector(".add")
+let inpuText = document.querySelector(".input")
+
+// ==helper button to clear local location
+// let temp = document.createElement("button")
+// temp.setAttribute("class", " add")
+// containerDiv.append(temp)
+// temp.onclick = function () { window.localStorage.clear() }
+//===========================================================
+
+let count = 0;
+let arr = [0];
+if (window.localStorage.getItem("counter") !== "0") {
+    count = window.localStorage.getItem("counter");
+}
+else {
+    count = 0;
+}
+tasksDiv.id = window.localStorage.getItem("hasTasks")
+tasksDiv.innerHTML = window.localStorage.getItem("tasksDiv")
+
+if (tasksDiv.id === "Done") {
+    arr = window.localStorage.getItem("arrayForRemovedItems").split(",").sort();
+    console.log(arr)
+}
+subBtn.onclick = function () {
+    vvv = inpuText.value
+    let textt = document.createTextNode(`${vvv}`)
+    let newEleDiv = document.createElement("div")
+    newEleDiv.appendChild(textt)
+    tasksDiv.setAttribute("id", `Done`)
+    newEleDiv.setAttribute("class", "inside")
+    window.localStorage.setItem("counter", ++count)
+    if (arr[1] === undefined) {
+        window.localStorage.setItem("arrayForRemovedItems", arr)
+        arr = window.localStorage.getItem("arrayForRemovedItems").split(",")
+    }
+    tasksDiv.appendChild(newEleDiv);
+    let deleteBtn = document.createElement("button")
+    let DeleteWord = document.createTextNode(`Delete`)
+    deleteBtn.appendChild(DeleteWord)
+    deleteBtn.setAttribute("class", "btnDel")
+
+    if (arr.length === 1) {
+        deleteBtn.setAttribute("id", `${count}`)
+    }
+    else {
+        let tempp = window.localStorage.getItem("arrayForRemovedItems").split(",").pop()
+        console.log(`tempp is ${tempp}`)
+        deleteBtn.setAttribute("id", `${arr.pop()}`)
+        window.localStorage.setItem("arrayForRemovedItems", arr)
+        arr = window.localStorage.getItem("arrayForRemovedItems").split(",")
+    }
+    deleteBtn.setAttribute("onClick", "reply_click(this.id)")
+    newEleDiv.appendChild(deleteBtn)
+    window.localStorage.setItem("tasksDiv", tasksDiv.innerHTML)
+    window.localStorage.setItem("hasTasks", tasksDiv.id)
+}
+function reply_click(clicked_id) {
+    arr[arr.length] = clicked_id;
+
+    let item = document.getElementById(clicked_id).parentElement
+    item.remove()
+    window.localStorage.setItem("arrayForRemovedItems", arr)
+    window.localStorage.setItem("counter", --count)
+    window.localStorage.setItem("tasksDiv", tasksDiv.innerHTML)
+    if (window.localStorage.getItem("counter") === "0") {
+        arr = [0];
+        window.localStorage.setItem("arrayForRemovedItems", arr);
+        window.localStorage.setItem("hasTasks", "null")
+    }
+}
+
+//-----------------delete just for test --------------------

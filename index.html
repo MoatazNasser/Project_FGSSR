@@ -6,6 +6,117 @@
   <title>Css-training</title>
   <link rel="stylesheet" href="css/my-css.css">
 
+
+  <!-- -----------to delete just for test -------- -->
+  <style>
+    .container {
+      margin-left: 30%;
+    }
+
+    .form {
+      margin: auto auto;
+      width: 500px;
+      height: 60px;
+      background-color: #eee;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px #808080a9;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .form:hover {
+      background-color: rgba(252, 142, 147, 0.294);
+    }
+
+    .add {
+      background-color: #f1528f;
+      border: 0px;
+      width: 100px;
+      height: 30px;
+      border-radius: 10px;
+      color: white;
+      font-size: large;
+      font-weight: bold;
+      box-shadow: 2px 2px 5px #808080a9, inset -2px -2px 1px #7a1039;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    .add:hover {
+      box-shadow: inset -1px -1px 5px #808080a9, inset 2px 2px 2px #7a1039;
+    }
+
+    .input {
+      height: 30px;
+      width: 320px;
+      border-radius: 10px;
+      padding-left: 20px;
+      color: #f1528f;
+      font-weight: bold;
+      box-shadow: inset 1px 1px 5px #808080a9;
+      margin-left: 20px;
+    }
+
+    .tasks {
+      margin: auto auto;
+      margin-top: 30px;
+      width: 500px;
+      min-height: 60px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-color: #eee;
+      border-radius: 20px;
+      box-shadow: 2px 2px 5px #808080a9;
+      opacity: 90%;
+    }
+
+    .tasks:hover {
+      background-color: rgba(252, 142, 147, 0.294);
+      box-shadow: inset 1px 1px 2px #808080a9;
+    }
+
+    .inside {
+      box-sizing: border-box;
+      margin: auto auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 450px;
+      height: 35px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 5px #808080a9;
+      padding-left: 30px;
+      color: #f1528f;
+      font-size: larger;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .btnDel {
+      background-color: #f1528f;
+      border: 0px;
+      width: 60px;
+      height: 20px;
+      position: absolute;
+      right: 20px;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      box-shadow: 1px 1px 5px #808080a9;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+
+    .btnDel:hover {
+      box-shadow: inset 1px 1px 5px #808080a9;
+
+    }
+  </style>
+  <!-- -----------to delete just for test -------- -->
 </head>
 
 <body>
@@ -68,7 +179,7 @@
   <div id="main">
     <!-- <div id="mainemptyheader"></div> -->
     <div id="mainContainStart">
-      <div class="container" id="mainContainStartMenu">
+      <div id="mainContainStartMenu">
 
         <div id="eduPro1">
           <p>Educational Programs</p>
@@ -234,9 +345,20 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis nesciunt corrupti rem optio
             omnis ad incidunt? Ut, magnam ratione distinctio ipsa temporibus architecto suscipit, voluptatum, commodi
             nesciunt rerum esse.</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis nesciunt corrupti rem optio
-            omnis ad incidunt? Ut, magnam ratione distinctio ipsa temporibus architecto suscipit, voluptatum, commodi
-            nesciunt rerum esse.</p>
+          <!-- ---------------- to delete just for test ----------- -->
+          <div class="container">
+            <div class="form">
+              <input type="text" class="input" />
+              <input type="submit" class="add" value="Add Task" />
+            </div>
+            <div class="tasks">
+              <!-- <div class="inside">
+                  Task one <button class="btnDel">Delete</button>
+                </div> -->
+            </div>
+          </div>
+          <!-- ---------------- to delete just for test ----------- -->
+
           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis nesciunt corrupti rem optio
             omnis ad incidunt? Ut, magnam ratione distinctio ipsa temporibus architecto suscipit, voluptatum, commodi
             nesciunt rerum esse.</p>
@@ -261,7 +383,6 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam corporis nesciunt corrupti rem optio
             omnis ad incidunt? Ut, magnam ratione distinctio ipsa temporibus architecto suscipit, voluptatum, commodi
             nesciunt rerum esse.</p> -->
-          <input type="text" width="300px" height="500px">
         </div>
         <!-- --------------sigma side background-------------------- -->
         <div id="sigmaBottom">
