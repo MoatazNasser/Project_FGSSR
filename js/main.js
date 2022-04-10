@@ -29,24 +29,9 @@ let circle_7 = document.getElementById("circle_7")
 //--------------- lines and circles above bars ---------------------
 
 
-let ele = document.getElementById("spareMenu")
-var rect = ele.getBoundingClientRect();
-console.log(rect.top, rect.right, rect.bottom, rect.left);
-
-window.onscroll = function () {
-    // console.log(scrollY)
-    // console.log(`my dim${rect.top}`)
-    if (scrollY >= 100) {
-        // window.scrollTo(0, 911)
-
-        // window.scrollTo({
-        //     left: 0,
-        //     top: 870,
-        //     behavior: "auto",
-        // });
-
-    }
-}
+// let ele = document.getElementById("spareMenu")
+// var rect = ele.getBoundingClientRect();
+// console.log(rect.top, rect.right, rect.bottom, rect.left);
 
 
 
@@ -467,7 +452,7 @@ sigmaSide.onmouseleave = function hidemenu() {
 }
 
 window.onscroll = function () {
-    console.log(scrollY)
+//     console.log(scrollY)
     if (scrollY <= 500) {
         menuButton.style.left = "232px"
         menuButton.style.transform = "scale(.8)"
