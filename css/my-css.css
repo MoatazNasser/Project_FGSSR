@@ -468,7 +468,9 @@ html {
 #mainContainRightSide{
     width: 17%;
     height: 870px;
-    padding: 5px 5px;
+    display: flex;
+    justify-content: center;
+    /* padding: 5px 5px; */
     position: relative;
     background-color: #0011257a;
     opacity: 0%;
@@ -479,10 +481,10 @@ html {
     opacity: 100%;
 }
 #mainContainRightSide img{
-    width: auto;
+    /* width: auto; */
     position: absolute;
     top:50px;
-    margin-left:25px ;
+    /* margin-left:25px ; */
 
     border: 3px solid #0011257a;    
     
