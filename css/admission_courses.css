@@ -465,6 +465,7 @@ html {
     position: relative;
     overflow:auto;
 }
+/* ---------------User Account---------- */
 #mainContainRightSide{
     width: 17%;
     height: 870px;
@@ -472,24 +473,116 @@ html {
     justify-content: center;
     /* padding: 5px 5px; */
     position: relative;
-    background-color: #0011257a;
-    opacity: 0%;
-    overflow: hidden;
+    background-color: #dce2e2;
     transition: .5s;
 }
-#mainContainRightSide:hover{
-    opacity: 100%;
+#accountContainer{
+    width: 90%;
+    height: 100%;
+    background-color: #00112598;
 }
-#mainContainRightSide img{
-    /* width: auto; */
-    position: absolute;
-    top:50px;
-    /* margin-left:25px ; */
+#accountHead , #accountFooter{
+    width: 100%;
+    height: 50px;
+    background-color: #001125;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#accountHead p{
+    font-size: larger;
+    font-weight: 600;
+}
+#accountBody{
+    width: 100%;
+    height: calc( 100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+#bodyUserPic{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+#bodyUserData{
+    width: 80%;
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top:2px solid #001125a6;
+    border-bottom:2px solid #001125a6;
+    /* background-color: brown; */
+}
+#bodyUserData div{
+    color: #8be7f9;
+    font-size: large;
+    font-weight: 600;
+}
+#bodyMenu{
+    width: 80%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: blueviolet; */
+}
+#bodyMenu div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #8be7f9;
+    font-size: large;
+    font-weight: 600;
+    background-color: #0011258c;
+    cursor: pointer;
+    transition: .3s;
+}
+#bodyMenu div:hover{
+    padding-left: 10px;
+    background-color: #001125e5;
+    border-right: 2px solid #8be7f9;
+    border-left: 2px solid #8be7f9;
+}
+#bodyLogOutEditProfile{
+    width: 90%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: firebrick; */
+}
+#bodyLogOut , #bodyEditProfile{
+    width: 50%;
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    color: #8be7f9;
+    cursor: pointer;
+}
+#bodyLogOut{
+    border-right:2px solid #001125a6;
+}
+/* ---------------User Account---------- */
 
-    border: 3px solid #0011257a;    
-    
-    /* background-color: red; */
-}
 #pagesbodyareaSigma{
     width: 66%;
     height: 870px;
@@ -542,7 +635,7 @@ html {
     margin-right: 20px;
 }
 #sigmaTopStraightPageName p{
-    color:#ef8354;  /*#ef8354*/
+    color:#83dcef;  /*#ef8354*/
     font-size: larger;
     font-weight: 600;
 }
@@ -824,6 +917,23 @@ html {
 
 /* ----------------Sigma Side--------------------------- */
 
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+.Abutton{
+    box-shadow: 3px 3px 3px  gray ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+}
+.Abutton:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+
+    background-color: #001125f1;
+}
 #contentHere{
     width: 85%;
     height: 770px;
@@ -835,6 +945,766 @@ html {
     /* background-color: red; */
     overflow: auto;
 }
+
+#admission{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+}
+#adS1{
+    width: 100%;
+    height: 75%;
+    /* background-color: yellow; */
+}
+/* ========================Select Program====================== */
+#adS1S1{
+    width: 100%;
+    height: 10%;
+    /* background-color: blueviolet; */
+}
+#selectProgram{
+    width: 100%;
+    height: 100%;
+    background-color: #0011251c;
+    border-radius: 15px 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+#selectProgramTitle{
+    width: 30%;
+    height: 100%;
+    /* background-color: bisque; */
+    color: #001125;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#selectProgramAcademic{
+    width: 35%;
+    height: 100%;
+    /* background-color: gray; */
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#selectProgramProfissional{
+    width: 35%;
+    height: 100%;
+    /* background-color: white; */
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* ======================All sections container ============== */
+#adS1S2{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: green; */
+}
+/* ----------pop up mess. --------- */
+#popupmessage , #popupmessage1 , #popupmessage2{
+    display: none; /*flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #85a1a783;
+    border: 2px solid #001125a4;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    position:absolute;
+    width: 80%;
+    height: 90%;
+    /* background-color: red; */
+    z-index: 2;
+    transition: .5s;
+}
+.pColored{
+    color:#8be7f9;
+    text-align: center;
+}
+#popupmessage p , #popupmessage1 p, #popupmessage2 p{
+    background-color: #0011257a;
+    margin:5px ;
+    width: 70%;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+    /* color:#001125; */
+    font-size: large;
+    font-weight: bold;
+
+}
+#popupmessagebuttons{
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+#popupmessagebuttons div{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+#cancelB2{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+#cancelBProf{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+#paymentimg{
+    margin-top: 5px;
+    width: 150px;
+    height: 15px;
+}
+/* ----------------- main options for academic--------- */
+#mainadS1S2Academic{
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    z-index: 1;
+    transform: .5s;
+}
+/*================ Select Specialization================ */
+#adS1S2S1{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    /* background-color: violet; */
+}
+#selectSpecializationTitle{
+    width: 30%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+}
+#selectSpecializationOptions1{
+    width: 35%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: aqua; */
+}
+
+#selectSpecializationOptions2{
+    width: 35%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* background-color: antiquewhite; */
+}
+/* ==================Select Admission Cources================ */
+#adS1S2S2{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    background-color: #0011251c;
+    border-radius: 15px 15px;
+    /* background-color: gold; */
+}
+#selectAdmissionCoursesTitle{
+    width: 30%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#selectAdmissionCoursesOptions1{
+    width: 35%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+#cpp{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+
+    /* align-items: flex-start; */
+}
+#cpp1{
+    width: 40%;
+    padding: 5px 5px;
+    overflow: hidden;
+}
+#cpp2{
+    width: 60%;
+    padding: 5px 5px;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: flex-start;
+}
+#cppAdd{
+    font-size:small;
+    margin-right: 5%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#cppRemove{
+    font-size:small;
+    margin-right: 20%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#statistics{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#statistics1{
+    width: 40%;
+    padding: 5px 5px;
+    overflow: hidden;
+}
+#statistics2{
+    width: 60%;
+    padding: 5px 5px;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: flex-start;
+}
+#statisticsAdd{
+    font-size:small;
+    margin-right: 5%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#statisticsRemove{
+    font-size:small;
+    margin-right: 20%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#selectAdmissionCoursesOptions2{
+    width: 35%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    /* background-color: antiquewhite; */
+}
+#paython{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#paython1{
+    width: 40%;
+    padding: 5px 5px;
+    overflow: hidden;
+}
+#paython2{
+    width: 60%;
+    padding: 5px 5px;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: flex-start;
+}
+#paythonAdd{
+    font-size:small;
+    margin-right: 5%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#paythonRemove{
+    font-size:small;
+    margin-right: 20%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#mathematics{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#mathematics1{
+    width: 40%;
+    padding: 5px 5px;
+    overflow: hidden;
+}
+#mathematics2{
+    width: 60%;
+    padding: 5px 5px;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: flex-start;
+}
+#mathematicsAdd{
+    font-size:small;
+    margin-right: 5%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+#mathematicsRemove{
+    font-size:small;
+    margin-right: 20%;
+    padding: 5px 5px;
+    border-radius: 8px 8px;
+    background-color: #001125;
+    cursor: pointer;
+}
+/* ========================Total Payment========================  */
+#adS1S2S3{    
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    /* background-color: antiquewhite; */
+}
+#totalPaymentTitle{
+    width: 30%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#totalPaymentNumber{
+    width: 20%;
+    height: 100%;
+    color: green;
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* background-color: blue; */
+}
+#totalPaymentCourses{
+    width: 50%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size:larger;
+    display: flex;
+    padding-left: 5%;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    /* background-color: blueviolet; */
+}
+/* ========================Upload ScreenShot========================= */
+#adS1S2S4{
+    width: 100%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: auto; */
+    background-color: #0011251c;
+    border-radius: 15px 15px;
+    /* background-color: aqua; */
+}
+#uploadScreenshot{
+    width: 100%;
+    height: 30%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    /* overflow: auto; */
+    /* background-color: red; */
+}
+#uploadScreenshotTitle{
+    width: 30%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#uploadScreenshotFile{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+#payNow{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    /* overflow: auto; */
+}
+
+#payNowButton{
+    /* width: 70px; */
+    padding: 10px 15px;
+    font-size: larger;
+    border-radius: 8px 8px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* ========popup alert ========== */
+#popUpPayNow{
+    display: none; /*flex*/
+    width: 200px;
+    height: 110px;
+    border-radius: 15px;
+    background-color: #c4c4c491;
+    border: 2px solid #001125a4;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top:-58px;
+    left: -114px;
+    z-index: 1;
+}
+#popUpPayNow p{
+    text-align:center;
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#popUpPayNowClose{
+    display: none; /*block*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(/image/close.png);
+    border: 2px solid #001125a4;
+    background-size: 27px 27px;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    position: absolute;
+    top:-70px;
+    left: 70px;
+    z-index: 2;
+    cursor: pointer;
+}
+/* ========popup alert ========== */
+
+#uploadScreenshotText{
+    width: 100%;
+    height: 70%;
+    padding: 2% 2%;
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow: auto;
+}
+#emailstyle{
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.336);
+    padding: 3px ;
+    padding-right: 25px;
+    border-radius: 7px;
+    font-size: large;
+    font-style: italic;
+}
+/* ----------------- main options for Profissional--------- */
+#mainadS1S2Prof{
+    display: none;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+    z-index: 1;
+    /* background-color: white; */
+    transform: .5s;
+}
+#adS1S2S1Prof{
+    width: 100%;
+    height: 28%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    overflow: auto;
+    /* background-color: violet; */
+}
+#selectSpecializationTitleProf{
+    width: 40%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: larger;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#selectSpecializationOptionsProf{
+    width: 50%;
+    height: 100%;
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    /* background-color: aqua; */
+}
+.box select {
+    background-color: #0011251c;
+    color: #001125;
+    padding: 8px;
+    width: 110%;
+    border-bottom: 2px solid #001125;
+    border: none;
+    font-size: large;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+.box select:hover {
+    background-color: #0011251c;
+    color: #001125;
+    padding: 8px;
+    width: 110%;
+    border-bottom: 2px solid #001125;
+    border: none;
+    font-size: large;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.2);
+    outline: none;
+
+}
+
+#SubmitButtonContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#SubmitButton{
+    width: 90px;
+    padding: 10px 15px;
+    font-size: larger;
+    border-radius: 8px 8px;
+    position: relative;
+    z-index: 0;
+    text-align: center;
+    cursor: pointer;
+}
+/* ========popup Submit alert ========== */
+#lastpop{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
+}
+#popUpSubmit{
+    display: none; /*flex*/
+    width: 200px;
+    height: 110px;
+    border-radius: 15px;
+    background-color: #c4c4c491;
+    border: 2px solid #001125a4;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    
+}
+#popUpSubmit p{
+    text-align:center;
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#popUpSubmitClose{
+    display: none; /*block*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(/image/close.png);
+    border: 2px solid #001125a4;
+    background-size: 27px 27px;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    position: absolute;
+    top:-12px;
+    left: 175px;
+    z-index: 5;
+    cursor: pointer;
+}
+/* ========popup Submit alert ========== */
+/* ========================Process Bar========================= */
+
+#adS2{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: orange; */
+}
+#adS2S1{
+    width: 100%;
+    min-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    /* row-gap: 20px; */
+}
+#step1,#step2,#step3,#step4,#step5,#step6,#step7,#step8{
+    width: 65px;
+    height:65px;
+    /* padding-bottom: 7.5%; */
+    background-color: #8b8b8b;
+    border-radius: 50%;
+    border: 2px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#step1{
+    background-image: url(/image/true.png);
+    background-size: 65px 65px;
+}
+
+#step1 p ,#step2 p ,#step3 p, #step4 p,#step5 p,#step6 p,#step7 p,#step8 p{
+    color: white;
+    font-size: x-large;
+    font-family:serif;
+}
+#step1Tail, #step2Tail, #step3Tail ,#step4Tail,
+#step5Tail, #step6Tail,#step7Tail{
+    width: 5%;
+    height: 3px;
+    background-color: #001125;
+}
+#adS2S2{
+    width: 100%;
+    height: 30%;
+    border-top: 2px solid #0011259a;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    /* background-color: red; */
+}
+#step1Name p ,#step2Name p ,#step3Name p, #step4Name p,#step5Name p,#step6Name p,#step7Name p,#step8Name p{
+    color: #001125;
+    font-size: small;
+    font-family:serif;
+    font-weight: bold;
+    text-align: center;
+}
+#step1TailS, #step2TailS, #step3TailS ,#step4TailS,
+#step5TailS, #step6TailS,#step7TailS{
+    width: 3%;
+    height: 3px;
+    /* background-color: #001125; */
+}
+
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
 
 /* ----------------Sigma Side background--------------------------- */
 #sigmaSideBG{
@@ -855,7 +1725,7 @@ html {
     width:50px;
     min-height: 100%;
     opacity: 100%;
-    background-color:#BFC0C0;
+    background-color:#DCE2E2;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -863,17 +1733,17 @@ html {
 #sigmaSideFixedBGTop{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGmid{
     min-width:40px;
     height: 566px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGbottom{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSidemoveBG{
     width: 433px;
@@ -883,7 +1753,7 @@ html {
     position: absolute;
     left: 50px;
     top: 0px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 #sigmaSidemove1BG{
@@ -894,7 +1764,7 @@ html {
     position: absolute;
     left: 50px;
     top: 335px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 /* #sigmaSidemoveGrayBG{
