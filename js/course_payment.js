@@ -570,32 +570,17 @@ upBotton.onclick = function () {
 //---------------------------------------------------
 //-------------------Content Here--------------------------------
 
-window.onload = function () {
-
-    //go to sigma directly
-    document.getElementById('mainContainSplit').scrollIntoView(true);
-    //go to sigma directly
-}
 
 //-------Get values From Database--------
-
-let StudyProgram   // changed when checkout or submit clicked
-let UserSpecialization  // changed when checkout or submit clicked
-
-let CPPSelect  // changed when c++ add or remove clicked
-let PaythonSelect  // changed when c++ add or remove clicked
-let MathSelect  // changed when Math add or remove clicked
-let StatisticsSelect  // changed when staiistics add or remove clicked
-
-let AdmissionCourseFee  //changed when checkout clicked
-
-
-let Step2 = true;  //-------Get values From Database--------
-let Step3; //changed when checkout clicked and //-------Get values From Database--------
-let Step4; //-------Get values From Database--------
-let Step5; //-------Get values From Database--------
-let Step6; //-------Get values From Database--------
-let Step7; //-------Get values From Database--------
+let MainCourseFee; //changed when confirm clicked and
+let StudyProgram; //= "Professional" //-------Get values From Database-------- //Academic
+let UserSpecialization; //= "Web" //-------Get values From Database-------- 
+let Step2; //= true;  //-------Get values From Database--------
+let Step3; //= true; //-------Get values From Database--------
+let Step4; //= true; //-------Get values From Database--------
+let Step5; //= true; //-------Get values From Database--------
+let Step6 = false; //= true; //-------Get values From Database--------
+let Step7; //changed when confirm clicked and //-------Get values From Database--------
 let Step8; //-------Get values From Database--------
 
 //-------Get values From Database--------
@@ -649,314 +634,82 @@ if (Step8 === true) {
 //---------------bar functions------------------
 //---------------bar functions------------------
 
-//------------------------------------
-let progType = "Academic"; // name of the program stored here
-let specialType = "Statistics"; // name of the Specialization stored here
+let S1S2Prog = document.getElementById("S1S2Prog")
+let S1S3Cost = document.getElementById("S1S3Cost")
 
-//---------function to detect program Type-------
-let Academic = document.getElementById("Academic");
-let Professional = document.getElementById("Professional");
-//------------------------------------
-let mainadS1S2Academic = document.getElementById("mainadS1S2Academic")
-let mainadS1S2Prof = document.getElementById("mainadS1S2Prof")
-//--------
-Academic.onchange = function () {
-    if (Academic.checked) {
-        progType = document.getElementById('Academic').value;
-        // console.log(progType)
-        //-------to show academic program options------
-        mainadS1S2Prof.style.display = "none"
-        mainadS1S2Academic.style.display = "block"
-        specialType = "Statistics"
+window.onload = function () {
+    if (StudyProgram === "Professional" || StudyProgram === "Academic") {
+        S1S2Prog.innerText = `${StudyProgram} Program`
+        if (StudyProgram === "Professional") {
+            S1S3Cost.innerText = `7000 L.E`
+        }
+        else if (StudyProgram === "Academic") {
+            S1S3Cost.innerText = `1200 L.E`
+        }
     }
+    //go to sigma directly
+    document.getElementById('mainContainSplit').scrollIntoView(true);
+    //go to sigma directly
 }
-Professional.onchange = function () {
-    if (Professional.checked) {
-        progType = document.getElementById('Professional').value;
-        specialType = "Statistical Quality Control & Assurance"
-        // console.log(progType)
-        //-------to show Prof program options------
-        mainadS1S2Prof.style.display = "block"
-        mainadS1S2Academic.style.display = "none"
-    }
-}
-//---------function to detect Specialization Type-------
-let Statistics = document.getElementById("Statistics");
-let ComputerScience = document.getElementById("ComputerScience");
-let InformationSystems = document.getElementById("InformationSystems");
-let OperationsResearch = document.getElementById("OperationsResearch");
-let OperationsManagement = document.getElementById("OperationsManagement");
-let DemographyBiostatistics = document.getElementById("DemographyBiostatistics");
-//------------------------------------
-Statistics.onchange = function () {
-    if (Statistics.checked) {
-        specialType = Statistics.value;
-        // console.log(specialType)
-    }
-}
-ComputerScience.onchange = function () {
-    if (ComputerScience.checked) {
-        specialType = ComputerScience.value;
-        // console.log(specialType)
-    }
-}
-InformationSystems.onchange = function () {
-    if (InformationSystems.checked) {
-        specialType = InformationSystems.value;
-        // console.log(specialType)
-    }
-}
-OperationsResearch.onchange = function () {
-    if (OperationsResearch.checked) {
-        specialType = OperationsResearch.value;
-        // console.log(specialType)
-    }
-}
-OperationsManagement.onchange = function () {
-    if (OperationsManagement.checked) {
-        specialType = OperationsManagement.value;
-        // console.log(specialType)
-    }
-}
-DemographyBiostatistics.onchange = function () {
-    if (DemographyBiostatistics.checked) {
-        specialType = DemographyBiostatistics.value;
-        // console.log(specialType)
-    }
-}
-//----------------------- Select admission courses ----------
-let TotalPayment = 0;
-let TotalNum = document.getElementById("TotalNum")//to show the cost to user
-let coursesArr = [" ", " ", " ", " "];
-let totalPaymentCourses = document.getElementById("totalPaymentCourses")//to show courses Names to user
-//-----add buttons-------
-let cppAdd = document.getElementById("cppAdd")
-let statisticsAdd = document.getElementById("statisticsAdd")
-let mathematicsAdd = document.getElementById("mathematicsAdd")
-let paythonAdd = document.getElementById("paythonAdd")
-//-----Remove buttons-------
-let cppRemove = document.getElementById("cppRemove")
-let statisticsRemove = document.getElementById("statisticsRemove")
-let mathematicsRemove = document.getElementById("mathematicsRemove")
-let paythonRemove = document.getElementById("paythonRemove")
 
-//----------Add and Del buttons Functions------
 
-cppRemove.style.pointerEvents = "none"
-statisticsRemove.style.pointerEvents = "none"
-mathematicsRemove.style.pointerEvents = "none"
-paythonRemove.style.pointerEvents = "none"
+let PayNowButton = document.getElementById("PayNowButton")
+let popUpSub = document.getElementById("popUpSub")
+let popUpPayClose = document.getElementById("popUpPayClose")
+let popupmessage = document.getElementById("popupmessage")
+let popupmessage2 = document.getElementById("popupmessage2")
+let checkoutB = document.getElementById("checkoutB")
+let CoursePayS1 = document.getElementById("CoursePayS1")
+let cancelB = document.getElementById("cancelB")
+let YourProgramIs = document.getElementById("YourProgramIs")
+let YourSpecializationIs = document.getElementById("YourSpecializationIs")
+let YouWillPay = document.getElementById("YouWillPay")
 
-cppAdd.onclick = function () {
-    TotalPayment += 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    cppAdd.style.pointerEvents = "none"
-    cppRemove.style.pointerEvents = "all"
-    coursesArr[0] = "| C++ |"
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    CPPSelect = true;
-    //-------- changes on database from Here -------
-}
-cppRemove.onclick = function () {
-    TotalPayment -= 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    cppAdd.style.pointerEvents = "all"
-    cppRemove.style.pointerEvents = "none"
-    coursesArr[0] = " "
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    CPPSelect = false;
-    //-------- changes on database from Here -------
-}
-statisticsAdd.onclick = function () {
-    TotalPayment += 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    statisticsAdd.style.pointerEvents = "none"
-    statisticsRemove.style.pointerEvents = "all"
-    coursesArr[1] = "| Statistics |"
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    StatisticsSelect = true;
-    //-------- changes on database from Here -------
-}
-statisticsRemove.onclick = function () {
-    TotalPayment -= 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    statisticsAdd.style.pointerEvents = "all"
-    statisticsRemove.style.pointerEvents = "none"
-    coursesArr[1] = " "
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    StatisticsSelect = false;
-    //-------- changes on database from Here -------
-}
-mathematicsAdd.onclick = function () {
-    TotalPayment += 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    mathematicsAdd.style.pointerEvents = "none"
-    mathematicsRemove.style.pointerEvents = "all"
-    coursesArr[2] = "| Mathematics |"
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    MathSelect = true;
-    //-------- changes on database from Here -------
-}
-mathematicsRemove.onclick = function () {
-    TotalPayment -= 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    mathematicsAdd.style.pointerEvents = "all"
-    mathematicsRemove.style.pointerEvents = "none"
-    coursesArr[2] = " "
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    MathSelect = false
-    //-------- changes on database from Here -------
-}
-paythonAdd.onclick = function () {
-    TotalPayment += 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    paythonAdd.style.pointerEvents = "none"
-    paythonRemove.style.pointerEvents = "all"
-    coursesArr[3] = "| Paython |"
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    PaythonSelect = true;
-    //-------- changes on database from Here -------
-}
-paythonRemove.onclick = function () {
-    TotalPayment -= 400;
-    TotalNum.innerText = `${TotalPayment}`;
-    paythonAdd.style.pointerEvents = "all"
-    paythonRemove.style.pointerEvents = "none"
-    coursesArr[3] = " "
-    totalPaymentCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `;
-    //-------- changes on database from Here -------
-    PaythonSelect = false;
-    //-------- changes on database from Here -------
-}
-//-------------Pay Now elements ---------
-let payNowButton = document.getElementById("payNowButton")// Main Payment
-let popUpPayNow = document.getElementById("popUpPayNow")// Alert min req.
-let popUpPayNowClose = document.getElementById("popUpPayNowClose")// close alert
-let popupmessage = document.getElementById("popupmessage")// Final checkout
-let popupmessage1 = document.getElementById("popupmessage1")// after checkout popup
-let mainOptionsadS1S2 = document.getElementById("mainadS1S2Academic")// Academic options container
-let cancelB = document.getElementById("cancelB")// cancel button
-let checkoutB = document.getElementById("checkoutB")// checkout button
-let YourProgramIs = document.getElementById("YourProgramIs")// to fill Your Program Is in popup message
-let YourSpecializationIs = document.getElementById("YourSpecializationIs")// to fill Your Specialization Is in popup message
-let YourAdmissionCourses = document.getElementById("YourAdmissionCourses")// to fill Your Admission Courses are in popup message
-let YouWillPay = document.getElementById("YouWillPay")// to fill You Will Pay in popup message
 
-//---------------Pay Now Button Functions---------
-//-----when First paynow button  clicked------
-payNowButton.onclick = function () {
-    if (TotalPayment === 0 || Step2 === false) {
-        popUpPayNow.style.display = "flex"
-        popUpPayNowClose.style.display = "block"
+PayNowButton.onclick = function () {
+    if (Step6 === false) {
+        popUpSub.style.display = "flex";
+        popUpPayClose.style.display = "block";
     }
-    else {
-        YourProgramIs.innerText = `${progType}`
-        YourSpecializationIs.innerText = `${specialType}`
-        YourAdmissionCourses.innerText = `${coursesArr[0]}  ${coursesArr[1]}  ${coursesArr[2]}  ${coursesArr[3]} `
-        YouWillPay.innerText = `${TotalPayment} L.E`
+    else if (Step6 === true) {
+        YourProgramIs.innerText = `${StudyProgram}`
+        YourSpecializationIs.innerText = `${UserSpecialization}`
+        YouWillPay.innerText = `${S1S3Cost.innerText}`
+        CoursePayS1.style.opacity = "15%"
         popupmessage.style.display = "flex"
-        mainOptionsadS1S2.style.opacity = "15%"
     }
 }
-//----when cancel button clicked----
+//-----------when checkout button clicked--------
+checkoutB.onclick = function () {
+    popupmessage.style.display = "none"
+    popupmessage2.style.display = "flex"
+    step7Circle.style.backgroundImage = "url('image/true.png')";
+    step7Circle.style.backgroundSize = "65px 65px";
+    step7Circle.innerHTML = " ";
+    //-------- changes on database from Here -------
+    Step7 = true;
+    MainCourseFee = "Paid"
+    //-------- changes on database from Here -------
+}
 cancelB.onclick = function () {
     popupmessage.style.display = "none"
-    mainOptionsadS1S2.style.opacity = "100%"
+    CoursePayS1.style.opacity = "100%"
 }
-//------ when check out clicked-----
-checkoutB.onclick = function () {
-    step3Circle.style.backgroundImage = "url('image/true.png')";
-    step3Circle.style.backgroundSize = "65px 65px";
-    step3Circle.innerHTML = " ";
-    popupmessage.style.display = "none"
-    popupmessage1.style.display = "flex"
-    //----to delete prof option --------
-    var temp1 = document.getElementById("selectProgramProfessional");
-    temp1.remove();
+//----------to close pop up alert --------------
+popUpPayClose.onclick = function () {
+    popUpSub.style.display = "none";
+    popUpPayClose.style.display = "none";
+}
 
-    //-------- changes on database from Here -------
-    StudyProgram = progType;
-    UserSpecialization = specialType;
-    AdmissionCourseFee = "Paid";
-    Step3 = true;
-    //-------- changes on database from Here -------
-}
-//---------when last cancel clicked and back to page -------
-let cancelB2 = document.getElementById("cancelB2")// close button after checkout
-cancelB2.onclick = function () {
-    popupmessage1.style.display = "none"
-    mainOptionsadS1S2.style.opacity = "100%"
-}
-//-----when alert popup appear------
-popUpPayNowClose.onclick = function () {
-    popUpPayNow.style.display = "none"
-    popUpPayNowClose.style.display = "none"
-}
-//------------------------------------------------
-//-------------Submit Prof Program elements ---------
-let SubmitButton = document.getElementById("SubmitButton")
-let popUpSubmit = document.getElementById("popUpSubmit")
-let popUpSubmitClose = document.getElementById("popUpSubmitClose")
-let popupmessage2 = document.getElementById("popupmessage2")
-let YourProgramIsProf = document.getElementById("YourProgramIsProf")// to fill Your Program Is in popup message2
-let YourSpecializationIsPrdf = document.getElementById("YourSpecializationIsProf")// to fill Your Specialization Is in popup message2
-
-
-//-----when First ٍSubmit button  clicked------
-SubmitButton.onclick = function () {
-    if (Step2 === false) {
-        popUpSubmit.style.display = "flex"
-        popUpSubmitClose.style.display = "block"
-    }
-    else {
-        YourProgramIsProf.innerText = `${progType}`
-        YourSpecializationIsProf.innerText = `${specialType}`
-        popupmessage2.style.display = "flex"
-        mainadS1S2Prof.style.opacity = "15%"
-        //-------- changes on database from Here -------
-        StudyProgram = progType;
-        UserSpecialization = specialType;
-        //-------- changes on database from Here -------
-    }
-}
-//-----alert submit popup appears------
-popUpSubmitClose.onclick = function () {
-    popUpSubmit.style.display = "none"
-    popUpSubmitClose.style.display = "none"
-}
-//---------when  Prof close clicked and back to Prof page -------
-let cancelBProf = document.getElementById("cancelBProf")// close button 
-cancelBProf.onclick = function () {
+//---------when last close clicked and back to page -------
+let closeB2 = document.getElementById("closeB2")// close button after checkout
+closeB2.onclick = function () {
     popupmessage2.style.display = "none"
-    mainadS1S2Prof.style.opacity = "100%"
-}
-
-//-------to set specialization for Prof program-----
-let ProfSpecializationType = document.getElementById("ProfSpecializationType")
-ProfSpecializationType.onchange = function () {
-    specialType = ProfSpecializationType.value;
+    CoursePayS1.style.opacity = "100%"
 }
 //-------------------Content Here--------------------------------
 //---------------------------------------------------
 
-let test = document.getElementById("step8")
-test.onmouseenter = function () {
-    console.log(`StudyProgram = ${StudyProgram}`)
-    console.log(`UserSpecialization = ${UserSpecialization}`)
-    console.log(`CPPSelect = ${CPPSelect}`)
-    console.log(`PaythonSelect = ${PaythonSelect}`)
-    console.log(`MathSelect = ${MathSelect}`)
-    console.log(`StatisticsSelect = ${StatisticsSelect}`)
-    console.log(`AdmissionCourseFee = ${AdmissionCourseFee}`)
-    console.log(`-------------------------------------`)
-}
 
 //--------- Reference user attributes used in all pages-------
 // let UserID
@@ -1013,3 +766,6 @@ test.onmouseenter = function () {
 // let Step8 = false; //-------Get values From Database-------
 
 //--------- Reference user attributes used in all pages-------
+
+
+//------------------

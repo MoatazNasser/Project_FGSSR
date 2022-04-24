@@ -950,12 +950,15 @@ a {
     overflow: auto;
 }
 
-#admission{
+#UploadDoc{
     width: 100%;
     height: 100%;
+    position: relative;
     /* background-color: blue; */
 }
-#adS1{
+#UploadDocS1{
+    position: relative;
+    /* opacity: 10%; */
     width: 100%;
     height: 75%;
     /* background-color: yellow; */
@@ -966,6 +969,191 @@ a {
     height: 10%;
     /* background-color: blueviolet; */
 }
+#S1S1,#S1S2,#S1S3,#S1S4,#S1S5,#S1S6,#S1S8{
+    width: 100%;
+    height: 12.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: red; */
+}
+#S1S1,#S1S3,#S1S5 ,#S1S8{
+    background-color: #0011251c;
+    border-radius: 15px 15px;
+}
+#S1S8{
+    height: 17%;
+}
+#S1S7{
+    width: 100%;
+    height: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0px;
+    padding-left: 5%;
+    position: relative;
+    /* background-color: blue; */
+    
+}
+#S1S1Title, #S1S2Title, #S1S3Title , #S1S4Title , #S1S5Title , #S1S6Title{
+    width: 45%;
+    height: 100%;
+    /* background-color: bisque; */
+    color: #001125;
+    font-weight: bold;
+    font-size: large;
+    padding-left: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+#S1S1Upload ,#S1S2Upload ,#S1S3Upload ,#S1S4Upload ,#S1S5Upload  {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 5%;
+    overflow: hidden;
+}
+#S1S6Upload {
+    width: 35%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+    padding-left: 5%;
+    overflow: hidden;
+}
+#S1S1Upload p, #S1S2Upload p, #S1S3Upload p ,#S1S4Upload p ,#S1S5Upload p ,#S1S6Upload p{
+    margin-right: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+}
+#subBut{
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* overflow: auto; */
+}
+#submitButton{
+    /* width: 70px; */
+    padding: 10px 15px;
+    font-size: larger;
+    border-radius: 8px 8px;
+    position: relative;
+    cursor: pointer;
+}
+#S1S8Title{
+    margin-right: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    padding-left: 5%;
+}
+/* ========popup alert ========== */
+#popUpSub{
+    display: none; /*flex*/
+    width: 200px;
+    height: 110px;
+    border-radius: 15px;
+    background-color: #c4c4c4a6;
+    border: 2px solid #001125a4;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    top:40px;
+    right: 21%;
+    z-index: 1;
+}
+#popUpSub p{
+    text-align:center;
+    color: red;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+#popUpSubClose{
+    display: none; /*block*/
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url(../image/close.png);
+    border: 2px solid #001125a4;
+    background-size: 27px 27px;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    position: absolute;
+    top:-15px;
+    left: 178px;
+    z-index: 2;
+    cursor: pointer;
+}
+/* ========popup alert ========== */
+/* ----------pop up mess. --------- */
+#popupmessage {
+    width: 70%;
+    height: 60%;
+    display: none; /*flex*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #85a1a783;
+    border: 2px solid #001125a4;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    position:absolute;
+    top: 5%;
+    left: 15%;
+    /* background-color: red; */
+    z-index: 2;
+    transition: .5s;
+}
+.pColored{
+    color:#8be7f9;
+    text-align: center;
+}
+#popupmessage p {
+    background-color: #0011257a;
+    margin:5px ;
+    width: 70%;
+    padding: 5px;
+    padding-left: 15px;
+    border-radius: 5px;
+    /* color:#001125; */
+    font-size: large;
+    font-weight: bold;
+}
+#confirmBut , #cancelBut{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+#popupmessagebuttons{
+    width: 70%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+#popupmessagebuttons div{
+    padding: 7px;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* ------------------------------------------- */
 #selectProgram{
     width: 100%;
     height: 100%;
@@ -999,7 +1187,7 @@ a {
     align-items: center;
 }
 
-#selectProgramProfissional{
+#selectProgramProfessional{
     width: 35%;
     height: 100%;
     /* background-color: white; */
@@ -1020,71 +1208,7 @@ a {
     position: relative;
     /* background-color: green; */
 }
-/* ----------pop up mess. --------- */
-#popupmessage , #popupmessage1 , #popupmessage2{
-    display: none; /*flex*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    background-color: #85a1a783;
-    border: 2px solid #001125a4;
-    box-shadow: 2px 2px 4px #8be7f9c5 ;
-    position:absolute;
-    width: 80%;
-    height: 90%;
-    /* background-color: red; */
-    z-index: 2;
-    transition: .5s;
-}
-.pColored{
-    color:#8be7f9;
-    text-align: center;
-}
-#popupmessage p , #popupmessage1 p, #popupmessage2 p{
-    background-color: #0011257a;
-    margin:5px ;
-    width: 70%;
-    padding: 5px;
-    padding-left: 15px;
-    border-radius: 5px;
-    /* color:#001125; */
-    font-size: large;
-    font-weight: bold;
 
-}
-#popupmessagebuttons{
-    width: 70%;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-}
-#popupmessagebuttons div{
-    padding: 7px;
-    border-radius: 5px;
-    font-size: medium;
-    font-weight: bold;
-    cursor: pointer;
-}
-#cancelB2{
-    padding: 7px;
-    border-radius: 5px;
-    font-size: medium;
-    font-weight: bold;
-    cursor: pointer;
-}
-#cancelBProf{
-    padding: 7px;
-    border-radius: 5px;
-    font-size: medium;
-    font-weight: bold;
-    cursor: pointer;
-}
-#paymentimg{
-    margin-top: 5px;
-    width: 150px;
-    height: 15px;
-}
 /* ----------------- main options for academic--------- */
 #mainadS1S2Academic{
     display: block;
@@ -1419,67 +1543,8 @@ a {
     overflow: auto;
 }
 
-#payNow{
-    width: 30%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 
-    /* overflow: auto; */
-}
 
-#payNowButton{
-    /* width: 70px; */
-    padding: 10px 15px;
-    font-size: larger;
-    border-radius: 8px 8px;
-    position: relative;
-    cursor: pointer;
-}
-
-/* ========popup alert ========== */
-#popUpPayNow{
-    display: none; /*flex*/
-    width: 200px;
-    height: 110px;
-    border-radius: 15px;
-    background-color: #c4c4c491;
-    border: 2px solid #001125a4;
-    box-shadow: 2px 2px 4px #8be7f9c5 ;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    position: absolute;
-    top:-58px;
-    left: -114px;
-    z-index: 1;
-}
-#popUpPayNow p{
-    text-align:center;
-    color: red;
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 5px;
-}
-#popUpPayNowClose{
-    display: none; /*block*/
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-image: url(../image/close.png);
-    border: 2px solid #001125a4;
-    background-size: 27px 27px;
-    box-shadow: 2px 2px 4px #8be7f9c5 ;
-    position: absolute;
-    top:-70px;
-    left: 70px;
-    z-index: 2;
-    cursor: pointer;
-}
-/* ========popup alert ========== */
 
 #uploadScreenshotText{
     width: 100%;
@@ -1502,7 +1567,7 @@ a {
     font-size: large;
     font-style: italic;
 }
-/* ----------------- main options for Profissional--------- */
+/* ----------------- main options for Professional--------- */
 #mainadS1S2Prof{
     display: none;
     position:absolute;
