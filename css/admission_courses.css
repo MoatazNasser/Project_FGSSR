@@ -927,6 +927,15 @@ a {
     color: #8be7f9;
     text-decoration: none; /* no underline */
 }
+#clickhere{
+    color: red;
+    width: fit-content;
+    background-color: rgba(128, 128, 128, 0.336);
+    padding: 3px ;
+    border-radius: 7px;
+    font-size: medium;
+    font-style: italic;
+}
 .Abutton{
     box-shadow: 3px 3px 3px  gray ;  
     color: #8be7f9c5;

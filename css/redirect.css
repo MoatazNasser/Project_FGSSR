@@ -127,11 +127,6 @@ html {
     margin-right: 20px;
 }
 /* ----------------- intro start here ----------------- */
-.menustyle , .menustyle:hover, .menustyle.focus, .menustyle.active{
-        text-decoration: none;
-        color: inherit;
-}
-
 #mainContainStart{
     height: 750px;
     /* background-color: red; */
@@ -486,31 +481,15 @@ html {
     position: relative;
     overflow:auto;
 }
+/* ---------------User Account---------- */
 #mainContainRightSide{
     width: 17%;
     height: 870px;
-    display: flex;
-    justify-content: center;
-    /* padding: 5px 5px; */
-    position: relative;
-    background-color: #0011257a;
-    opacity: 0%;
-    overflow: hidden;
-    transition: .5s;
+    /* background-color: #dce2e2; */
 }
-#mainContainRightSide:hover{
-    opacity: 100%;
-}
-#mainContainRightSide img{
-    /* width: auto; */
-    position: absolute;
-    top:50px;
-    /* margin-left:25px ; */
 
-    border: 3px solid #0011257a;    
-    
-    /* background-color: red; */
-}
+/* ---------------User Account---------- */
+
 #pagesbodyareaSigma{
     width: 66%;
     height: 870px;
@@ -563,7 +542,7 @@ html {
     margin-right: 20px;
 }
 #sigmaTopStraightPageName p{
-    color:#ef8354;  /*#ef8354*/
+    color:#83dcef;  /*#ef8354*/
     font-size: larger;
     font-weight: 600;
 }
@@ -845,17 +824,65 @@ html {
 
 /* ----------------Sigma Side--------------------------- */
 
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+a {
+    color: #8be7f9c5;
+    text-decoration: none; /* no underline */
+}
+.Abutton{
+    box-shadow: 3px 3px 3px  gray ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+.Abutton:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+
 #contentHere{
     width: 85%;
     height: 770px;
     padding: 15px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     top:50px;
     left: 55px;
     z-index: 1;
     /* background-color: red; */
     overflow: auto;
 }
+
+#cont{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #001125;
+    font-size: larger;
+    font-weight: 600;
+}
+#cont p{
+    margin-top: 15px;
+}
+#counter{
+    color: red;
+    font-size: x-large;
+}
+
+
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
 
 /* ----------------Sigma Side background--------------------------- */
 #sigmaSideBG{
@@ -876,7 +903,7 @@ html {
     width:50px;
     min-height: 100%;
     opacity: 100%;
-    background-color:#BFC0C0;
+    background-color:#DCE2E2;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -884,17 +911,17 @@ html {
 #sigmaSideFixedBGTop{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGmid{
     min-width:40px;
     height: 566px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGbottom{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSidemoveBG{
     width: 433px;
@@ -904,7 +931,7 @@ html {
     position: absolute;
     left: 50px;
     top: 0px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 #sigmaSidemove1BG{
@@ -915,7 +942,7 @@ html {
     position: absolute;
     left: 50px;
     top: 335px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 /* #sigmaSidemoveGrayBG{

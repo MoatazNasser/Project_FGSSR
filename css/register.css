@@ -127,11 +127,6 @@ html {
     margin-right: 20px;
 }
 /* ----------------- intro start here ----------------- */
-.menustyle , .menustyle:hover, .menustyle.focus, .menustyle.active{
-        text-decoration: none;
-        color: inherit;
-}
-
 #mainContainStart{
     height: 750px;
     /* background-color: red; */
@@ -486,31 +481,15 @@ html {
     position: relative;
     overflow:auto;
 }
+/* ---------------User Account---------- */
 #mainContainRightSide{
     width: 17%;
     height: 870px;
-    display: flex;
-    justify-content: center;
-    /* padding: 5px 5px; */
-    position: relative;
-    background-color: #0011257a;
-    opacity: 0%;
-    overflow: hidden;
-    transition: .5s;
+    /* background-color: #dce2e2; */
 }
-#mainContainRightSide:hover{
-    opacity: 100%;
-}
-#mainContainRightSide img{
-    /* width: auto; */
-    position: absolute;
-    top:50px;
-    /* margin-left:25px ; */
 
-    border: 3px solid #0011257a;    
-    
-    /* background-color: red; */
-}
+/* ---------------User Account---------- */
+
 #pagesbodyareaSigma{
     width: 66%;
     height: 870px;
@@ -563,7 +542,7 @@ html {
     margin-right: 20px;
 }
 #sigmaTopStraightPageName p{
-    color:#ef8354;  /*#ef8354*/
+    color:#83dcef;  /*#ef8354*/
     font-size: larger;
     font-weight: 600;
 }
@@ -845,17 +824,258 @@ html {
 
 /* ----------------Sigma Side--------------------------- */
 
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+a {
+    color: #8be7f9c5;
+    text-decoration: none; /* no underline */
+}
+.Abutton{
+    box-shadow: 3px 3px 3px  gray ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+.Abutton:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+.Abuttonn{
+    box-shadow: 2px 2px 1px  rgba(155, 155, 155, 0.397) ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+.Abuttonn:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+
 #contentHere{
     width: 85%;
     height: 770px;
     padding: 15px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top:50px;
     left: 55px;
     z-index: 1;
     /* background-color: red; */
+    
     overflow: auto;
 }
+#regContainer{
+    width: 70%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border: 2px solid #001125bd;
+    background-color: #bcbebe59;
+    border-radius: 20px;
+    position: relative;
+    /* background-color: blue; */
+}
+
+#loginpic{
+    position: absolute;
+    top: -60px;
+    right: calc( (100% / 2 ) - 60px);
+    width: 120px;
+    height: 120px;
+    /* background-color: red; */
+    background-image: url(../image/userPic.png);
+    background-size: 120px 120px;
+}
+#popupTerms{
+    display: none;/*block*/
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 17%;
+    background-color: #001125d2;
+    border: 2px solid #001125;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    padding: 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: #8be7f9;
+    border-radius: 15px;
+    z-index: 2;
+}
+#popupTerms p{
+    height: 90%;
+    font-size: medium;
+    font-weight: 600;
+    color: #8be7f9;
+    overflow: hidden;
+}
+#popUpClose{
+    height: 10%;
+    width: 100%;
+    /* background-color: red; */
+}
+.req{
+    color: red;
+    font-size: medium;
+}
+#req1,#req11,#req2,#req3,#req4,#req5,#req6,#req7,#req8{
+    visibility: hidden;
+}
+#regName,#regNamefield,#regPass,#regPassfield,#regID,#regIDfield,#regEmail,#regMobile,#regCountry,#regGender,#regUploadID,#regTerms,#regEmailfield,#regMobilefield,#regCountryfield,#regUploadIDfield,#regTermsfield{
+    width: 75%;
+    height: 4.5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #001125;
+    font-size: larger;
+    font-weight: 600;
+    overflow:hidden;
+    /* background-color: red; */
+}
+#UploadID{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#regUploadID{
+    height: 6%;
+}
+#regTerms{
+    height: 8%;
+    margin-bottom: 10px;
+}
+#regTermsfield{
+    width: 100%;
+    font-size: medium;
+    height: 100%;
+    justify-content: center;
+    border-bottom: 2px solid #0011255b;
+    border-top: 2px solid #0011255b;
+}
+#popUpClose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#closeBut{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+#loginpic1{
+    width: 75%;
+    height: 8%;
+    /* background-color: red; */
+}
+#regNamefield{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#regGenderfield{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+#Genderfield1,#Genderfield2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #001125;
+    font-size: larger;
+    font-weight: 600;
+}
+#fname, #lname , #ID,#Email,#Mobile,#Country{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #001125bd;
+    color: #012c5d;
+    font-size: medium;
+    padding-left: 15px;
+}
+#Pass, #ID,#Email,#Mobile,#Country{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #001125bd;
+    color: #012c5d;
+    font-size: medium;
+    padding-left: 15px;
+}
+#Terms2{
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+#Terms2 p{
+    color: rgb(0, 153, 255);
+    cursor: pointer;
+    transition: .5s;
+}
+#Terms2 p:hover{
+    background-color: #00112565;
+    border-radius: 3px;
+    color: rgb(0, 55, 92);
+    cursor: pointer;
+}
+#loginmessage{
+    visibility: hidden;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    color: red;
+    font-size: medium;
+    font-weight: 600;
+    width:70% ;
+    height: 10%;
+}
+#loginbuttons{
+    width: 70%;
+    height: 6.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+#loginBut, #registerBut{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+/* ------------------------------------------- */
+
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
 
 /* ----------------Sigma Side background--------------------------- */
 #sigmaSideBG{
@@ -876,7 +1096,7 @@ html {
     width:50px;
     min-height: 100%;
     opacity: 100%;
-    background-color:#BFC0C0;
+    background-color:#DCE2E2;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -884,17 +1104,17 @@ html {
 #sigmaSideFixedBGTop{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGmid{
     min-width:40px;
     height: 566px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGbottom{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSidemoveBG{
     width: 433px;
@@ -904,7 +1124,7 @@ html {
     position: absolute;
     left: 50px;
     top: 0px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 #sigmaSidemove1BG{
@@ -915,7 +1135,7 @@ html {
     position: absolute;
     left: 50px;
     top: 335px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 /* #sigmaSidemoveGrayBG{

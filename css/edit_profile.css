@@ -31,7 +31,6 @@ html {
     /* left: 30px; */
 }
 #logonamecont{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,7 +51,6 @@ html {
     align-items: center;
 }
 #searchsocialcont{
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,26 +110,7 @@ html {
     height: 40px;
     cursor: pointer;
 }
-#loginregistercont{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#headlogin, #headregister {
-    color: #8be7f9;
-    font-size: larger;
-    font-weight: 600;
-    text-decoration: none; /* no underline */
-}
-#headregister {
-    margin-right: 20px;
-}
 /* ----------------- intro start here ----------------- */
-.menustyle , .menustyle:hover, .menustyle.focus, .menustyle.active{
-        text-decoration: none;
-        color: inherit;
-}
-
 #mainContainStart{
     height: 750px;
     /* background-color: red; */
@@ -486,6 +465,8 @@ html {
     position: relative;
     overflow:auto;
 }
+/* ---------------User Account---------- */
+/* ---------------User Account---------- */
 #mainContainRightSide{
     width: 17%;
     height: 870px;
@@ -493,24 +474,118 @@ html {
     justify-content: center;
     /* padding: 5px 5px; */
     position: relative;
-    background-color: #0011257a;
-    opacity: 0%;
-    overflow: hidden;
+    background-color: #dce2e2;
     transition: .5s;
 }
-#mainContainRightSide:hover{
-    opacity: 100%;
+#accountContainer{
+    width: 90%;
+    height: 100%;
+    background-color: #00112598;
 }
-#mainContainRightSide img{
-    /* width: auto; */
-    position: absolute;
-    top:50px;
-    /* margin-left:25px ; */
+#accountHead , #accountFooter{
+    width: 100%;
+    height: 50px;
+    background-color: #001125;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#accountHead p{
+    font-size: larger;
+    font-weight: 600;
+}
+#accountBody{
+    width: 100%;
+    height: calc( 100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+#bodyUserPic{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+#bodyUserData{
+    width: 80%;
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top:2px solid #001125a6;
+    border-bottom:2px solid #001125a6;
+    /* background-color: brown; */
+}
+#bodyUserData div{
+    color: #8be7f9;
+    font-size: large;
+    font-weight: 600;
+}
+#bodyMenu{
+    width: 80%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: blueviolet; */
+}
+#bodyMenu div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #8be7f9;
+    font-size: large;
+    font-weight: 600;
+    background-color: #0011258c;
+    cursor: pointer;
+    transition: .3s;
+}
+#bodyMenu div:hover{
+    padding-left: 10px;
+    background-color: #001125e5;
+    border-right: 2px solid #8be7f9;
+    border-left: 2px solid #8be7f9;
+}
+#bodyLogOutEditProfile{
+    width: 90%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: firebrick; */
+}
+#bodyLogOut , #bodyEditProfile{
+    width: 50%;
+    font-size: medium;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    color: #8be7f9;
+    cursor: pointer;
+}
+#bodyLogOut{
+    border-right:2px solid #001125a6;
+}
+/* ---------------User Account---------- */
 
-    border: 3px solid #0011257a;    
-    
-    /* background-color: red; */
-}
+/* ---------------User Account---------- */
+
 #pagesbodyareaSigma{
     width: 66%;
     height: 870px;
@@ -563,7 +638,7 @@ html {
     margin-right: 20px;
 }
 #sigmaTopStraightPageName p{
-    color:#ef8354;  /*#ef8354*/
+    color:#83dcef;  /*#ef8354*/
     font-size: larger;
     font-weight: 600;
 }
@@ -845,17 +920,237 @@ html {
 
 /* ----------------Sigma Side--------------------------- */
 
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+a {
+    color: #8be7f9;
+    text-decoration: none; /* no underline */
+}
+.Abutton{
+    box-shadow: 3px 3px 3px  gray ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+.Abutton:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+.Abuttonn{
+    box-shadow: 2px 2px 1px  rgba(155, 155, 155, 0.397) ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+.Abuttonn:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+
 #contentHere{
     width: 85%;
     height: 770px;
     padding: 15px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top:50px;
     left: 55px;
     z-index: 1;
     /* background-color: red; */
+    
     overflow: auto;
 }
+#editContainer{
+    width: 70%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    border: 2px solid #001125bd;
+    background-color: #bcbebe59;
+    border-radius: 20px;
+    position: relative;
+    /* background-color: blue; */
+}
+
+#loginpic{
+    position: absolute;
+    top: -60px;
+    right: calc( (100% / 2 ) - 60px);
+    width: 120px;
+    height: 120px;
+    /* background-color: red; */
+    background-image: url(../image/userPic.png);
+    background-size: 120px 120px;
+}
+#popupTerms{
+    display: none;/*block*/
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    top: 17%;
+    background-color: #001125d2;
+    border: 2px solid #001125;
+    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    padding: 20px;
+    font-size: medium;
+    font-weight: 600;
+    color: #8be7f9;
+    border-radius: 15px;
+    z-index: 2;
+}
+#popupTerms p{
+    height: 90%;
+    font-size: medium;
+    font-weight: 600;
+    color: #8be7f9;
+    overflow: hidden;
+}
+#popUpClose{
+    height: 10%;
+    width: 100%;
+    /* background-color: red; */
+}
+
+#saved{
+    visibility: hidden;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: large;
+    margin-right: 15px;
+}
+#editName,#editNamefield,#editPass,#editPassfield,#regID,#regIDfield,#regEmail,#editMobile,#regCountry,#regGender,#editUploadID,#regTerms,#regEmailfield,#editMobilefield,#regCountryfield,#editUploadIDfield,#regTermsfield{
+    width: 75%;
+    height: 7%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #001125;
+    font-size: larger;
+    font-weight: 600;
+    overflow:hidden;
+    /* background-color: red; */
+}
+#UploadID{
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#editUploadID{
+    height: 6%;
+}
+#loginpic1{
+    width: 75%;
+    height: 8%;
+    /* background-color: red; */
+}
+#editNamefield{
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+#regGenderfield{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+#Genderfield1,#Genderfield2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #001125;
+    font-size: larger;
+    font-weight: 600;
+}
+#fname, #lname , #ID,#Email,#Mobile,#Country{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #001125bd;
+    color: #012c5d;
+    font-size: medium;
+    padding-left: 15px;
+}
+#Pass, #ID,#Email,#Mobile,#Country{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-right: 15px;
+    border: 2px solid #001125bd;
+    color: #012c5d;
+    font-size: medium;
+    padding-left: 15px;
+}
+#Terms2{
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+#Terms2 p{
+    color: rgb(0, 153, 255);
+    cursor: pointer;
+    transition: .5s;
+}
+#Terms2 p:hover{
+    background-color: #00112565;
+    border-radius: 3px;
+    color: rgb(0, 55, 92);
+    cursor: pointer;
+}
+#loginmessage{
+    visibility: hidden;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    color: red;
+    font-size: medium;
+    font-weight: 600;
+    width:70% ;
+    height: 10%;
+}
+#editbuttons{
+    width: 70%;
+    height: 6.5%;
+    display: flex;
+    justify-content: flex-end;
+}
+#editBut{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+/* ------------------------------------------- */
+
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
 
 /* ----------------Sigma Side background--------------------------- */
 #sigmaSideBG{
@@ -876,7 +1171,7 @@ html {
     width:50px;
     min-height: 100%;
     opacity: 100%;
-    background-color:#BFC0C0;
+    background-color:#DCE2E2;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -884,17 +1179,17 @@ html {
 #sigmaSideFixedBGTop{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGmid{
     min-width:40px;
     height: 566px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSideFixedBGbottom{
     min-width:40px;
     height: 102px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
 }
 #sigmaSidemoveBG{
     width: 433px;
@@ -904,7 +1199,7 @@ html {
     position: absolute;
     left: 50px;
     top: 0px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 #sigmaSidemove1BG{
@@ -915,7 +1210,7 @@ html {
     position: absolute;
     left: 50px;
     top: 335px;
-    background-color: #BFC0C0;
+    background-color: #DCE2E2;
     z-index: 1;
 }
 /* #sigmaSidemoveGrayBG{
