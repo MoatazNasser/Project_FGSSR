@@ -571,7 +571,7 @@ upBotton.onclick = function () {
 //-------------------Content Here--------------------------------
 //-------Get values From Database--------
 
-let StudyProgram   // changed when checkout or submit clicked
+let StudyProgram = "Professional"  // changed when checkout or submit clicked //Academic //Professional
 let UserSpecialization  // changed when checkout or submit clicked
 
 let CPPSelect  // changed when c++ add or remove clicked
@@ -580,7 +580,7 @@ let MathSelect  // changed when Math add or remove clicked
 let StatisticsSelect  // changed when staiistics add or remove clicked
 
 let AdmissionCourseFee //= "Paid"  //changed when checkout clicked
-
+let MainCourseFee //= "Paid"//-------Get values From Database--------
 
 let Step2 = true;  //-------Get values From Database--------
 let Step3; //changed when checkout clicked and //-------Get values From Database--------
@@ -592,17 +592,7 @@ let Step8; //-------Get values From Database--------
 
 //-------Get values From Database--------
 
-window.onload = function () {
 
-    //go to sigma directly
-    document.getElementById('mainContainSplit').scrollIntoView(true);
-    if (AdmissionCourseFee === "Paid") {
-        var temp1 = document.getElementById("selectProgramProfessional");
-        temp1.remove();
-    }
-
-    //go to sigma directly
-}
 
 
 //----------------------------------------------------------
@@ -948,6 +938,34 @@ cancelBProf.onclick = function () {
 let ProfSpecializationType = document.getElementById("ProfSpecializationType")
 ProfSpecializationType.onchange = function () {
     specialType = ProfSpecializationType.value;
+}
+
+
+window.onload = function () {
+
+    //go to sigma directly
+    document.getElementById('mainContainSplit').scrollIntoView(true);
+    //go to sigma directly
+    //----acadimic course active (hide prof. option)
+    if (AdmissionCourseFee === "Paid") {
+        var temp1 = document.getElementById("selectProgramProfessional");
+        temp1.remove();
+    }
+    if (MainCourseFee === "Paid" && StudyProgram === "Academic") {
+        var temp1 = document.getElementById("selectProgramProfessional");
+        temp1.remove();
+        payNowButton.style.pointerEvents = "none";
+    }
+    //----Professional course active (hide acadimic option )
+    if (MainCourseFee === "Paid" && StudyProgram === "Professional") {
+        document.getElementById("Professional").checked = true;
+        mainadS1S2Prof.style.display = "block"
+        mainadS1S2Academic.style.display = "none"
+        SubmitButton.style.pointerEvents = "none";
+
+        var temp2 = document.getElementById("selectProgramAcademic");
+        temp2.remove();
+    }
 }
 //-------------------Content Here--------------------------------
 //---------------------------------------------------

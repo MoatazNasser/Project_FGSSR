@@ -572,14 +572,16 @@ upBotton.onclick = function () {
 
 
 //-------Get values From Database--------
-let MainCourseFee; //changed when confirm clicked and
-let StudyProgram; //= "Professional" //-------Get values From Database-------- //Academic
-let UserSpecialization; //= "Web" //-------Get values From Database-------- 
+let MainCourseFee //= "Paid"; //changed when confirm clicked and or //-------Get values From Database--------
+let StudyProgram = "Professional" //-------Get values From Database-------- //Academic
+let UserSpecialization = "Web" //-------Get values From Database-------- 
+let UserCountry = "Egypt"  //-------Get values From Database--------
+
 let Step2; //= true;  //-------Get values From Database--------
 let Step3; //= true; //-------Get values From Database--------
 let Step4; //= true; //-------Get values From Database--------
 let Step5; //= true; //-------Get values From Database--------
-let Step6 = false; //= true; //-------Get values From Database--------
+let Step6 = true; //-------Get values From Database--------
 let Step7; //changed when confirm clicked and //-------Get values From Database--------
 let Step8; //-------Get values From Database--------
 
@@ -637,20 +639,7 @@ if (Step8 === true) {
 let S1S2Prog = document.getElementById("S1S2Prog")
 let S1S3Cost = document.getElementById("S1S3Cost")
 
-window.onload = function () {
-    if (StudyProgram === "Professional" || StudyProgram === "Academic") {
-        S1S2Prog.innerText = `${StudyProgram} Program`
-        if (StudyProgram === "Professional") {
-            S1S3Cost.innerText = `7000 L.E`
-        }
-        else if (StudyProgram === "Academic") {
-            S1S3Cost.innerText = `1200 L.E`
-        }
-    }
-    //go to sigma directly
-    document.getElementById('mainContainSplit').scrollIntoView(true);
-    //go to sigma directly
-}
+
 
 
 let PayNowButton = document.getElementById("PayNowButton")
@@ -706,6 +695,31 @@ let closeB2 = document.getElementById("closeB2")// close button after checkout
 closeB2.onclick = function () {
     popupmessage2.style.display = "none"
     CoursePayS1.style.opacity = "100%"
+}
+
+window.onload = function () {
+    if (StudyProgram === "Professional" || StudyProgram === "Academic") {
+        S1S2Prog.innerText = `${StudyProgram} Program`
+        if (StudyProgram === "Professional" && UserCountry === "Egypt") {
+            S1S3Cost.innerText = `7000 L.E`
+        }
+        else if (StudyProgram === "Academic" && UserCountry === "Egypt") {
+            S1S3Cost.innerText = `1200 L.E`
+        }
+        else if (StudyProgram === "Professional" && UserCountry != "Egypt") {
+            S1S3Cost.innerText = `1500 $`
+        }
+        else if (StudyProgram === "Academic" && UserCountry != "Egypt") {
+            S1S3Cost.innerText = `1000 $`
+        }
+    }
+    if (MainCourseFee === "Paid") {
+        PayNowButton.style.pointerEvents = "none";
+    }
+
+    //go to sigma directly
+    document.getElementById('mainContainSplit').scrollIntoView(true);
+    //go to sigma directly
 }
 //-------------------Content Here--------------------------------
 //---------------------------------------------------

@@ -569,12 +569,7 @@ upBotton.onclick = function () {
 
 //---------------------------------------------------
 //-------------------Content Here--------------------------------
-window.onload = function () {
 
-    //go to sigma directly
-    document.getElementById('mainContainSplit').scrollIntoView(true);
-    //go to sigma directly
-}
 //-------Get values From Database--------
 
 
@@ -587,6 +582,7 @@ let Document6 //changed when confirm clicked
 
 
 let StudyProgram //= "Professional" //-------Get values From Database-------- //Academic
+let MainCourseFee //= "Paid" //-------Get values From Database--------
 let Step2 //= true;  //-------Get values From Database--------
 let Step3 //= true; //-------Get values From Database--------
 let Step4 //= true; //-------Get values From Database--------
@@ -698,6 +694,16 @@ popUpSubClose.onclick = function () {
     popUpSubClose.style.display = "none";
 }
 
+
+window.onload = function () {
+
+    //go to sigma directly
+    document.getElementById('mainContainSplit').scrollIntoView(true);
+    //go to sigma directly
+    if (MainCourseFee === "Paid") {
+        submitButton.style.pointerEvents = "none";
+    }
+}
 //-------------------Content Here--------------------------------
 //---------------------------------------------------
 
