@@ -697,7 +697,7 @@ registerBut.onclick = function () {
         IDPhoto = UploadID.value;
         UserPassword = Pass.value;
         //-------- changes on database from Here -------
-        window.location.href = "my_process.html";
+        window.location.href = "login.html";
     }
 }
 // console.log(Terms1.value)
