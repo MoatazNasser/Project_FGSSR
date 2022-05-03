@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: #001125f8;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 3px solid #8be7f942;
+    border-bottom: 3px solid #8be7f942;
+}
+#emptyRight{
+    width: 10%; /*10-17%*/
+    /* background-color: red; */
+}
+#headContain{
+    width: 79%;
+    height: 74px;
+    background-color: #001125;
+    display: flex;
+    justify-content: space-between;
+
+    /* position: relative; */
+}
+
+#logonamecont{
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo1{
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+}
+#facName{
+    min-width: 100px;
+    color: #8be7f9;
+    font-size: 20px;
+    font-weight: 900;
+    height: 142px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logincont{
+    visibility: visible; /*visible*/
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginregistercont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headlogin {
+    color: #8be7f9;
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 50px;
+    cursor: pointer;
+    text-decoration: none; /* no underline */
+}
+#headregister {
+    margin-right: 20px;
+}
+
+
+
+/* -----------------mainbody---------------- */
+#mainContainPages{
+    height: 820px;
+    background-color: white;
+    /* background-image: url(/image/background-site.jpg); */
+    /* background-repeat: repeat;  */
+    /* background-size: 150px 150px; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    opacity: 100%; 
+    position: relative;
+    overflow:auto;
+}
+#mainContainRightSide{
+    width: 10%; /*10-17%*/
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    /* padding: 5px 5px; */
+    position: relative;
+    /* background-color: #0011257a; */
+    opacity: 100%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+#pagesbodyareaSigma{
+    width: 79%;
+    height: 820px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    opacity: 100% ;
+    z-index: 2;
+    margin-left: 9px;
+}
+/* -------------Sigma sign insde body-------------- */
+#sigmaTop{
+    width: 100%;
+    height: 50px; 
+    background-color: #001125;
+    
+    
+}
+
+#contentHere{
+    width: 100%;
+    height: 720px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* z-index: 1; */
+    background-color: #dce2e2;
+    overflow: auto;
+}
+
+
+/* ----------------Sigma Side background--------------------------- */
+
+#sigmaBottom{
+    width: 100%;
+    height: 50px;
+    background-color: #001125;
+    
+}
+
+/* ---------------------------------------------------- */
+#footer{
+    
+    height: 50px;
+    background-color: #001125;
+    border-top: 3px solid #8be7f942;
+    border-bottom: 3px solid #8be7f942;
+    display: flex;
+    justify-content: space-around; /* To Be center*/
+    align-items: center;
+}
+
+#footercopyright{
+    color:#BFC0C0 ;
+}
+
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
+a {
+    color: #8be7f9c5;
+    text-decoration: none; /* no underline */
+}
+.Abutton{
+    box-shadow: 3px 3px 3px  gray ;  
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+.Abutton:hover{
+    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+
+#contentHereBG{
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    /* z-index: 1; */
+    /* background-color: #dce2e2; */
+    background-image: url(../image/AdminBG.jpg);
+    background-size:  100% ;
+    transition: .5S;
+}
+
+#loginContainer{
+    width: 40%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    /* z-index: 2; */
+    border: 2px solid #001125bd;
+    background-color: #bcbebe59;
+    border-radius: 20px;
+    position: relative;
+    transition: .5S;
+}
+
+#loginpic{
+    position: absolute;
+    top: -60px;
+    right: calc( (100% / 2 ) - 60px);
+    width: 120px;
+    height: 120px;
+    /* background-color: red; */
+    background-image: url(../image/userPic.png);
+    background-size: 120px 120px;
+}
+
+#loginId,#loginIdfield,#loginpass,#loginpassfield,#loginbuttons{
+    width: 70%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #001125;
+    font-size: larger;
+    font-weight: 600;
+    overflow:hidden;
+    /* background-color: red; */
+}
+#loginpic1{
+    width: 70%;
+    height: 14%;
+}
+#field1, #field2{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: 2px solid #001125bd;
+    color: #012c5d;
+    font-size: large;
+    padding-left: 15px;
+}
+#loginmessage{
+    visibility: hidden;
+    display: flex; 
+    justify-content: flex-start;
+    align-items: center;
+    color: red;
+    font-size: medium;
+    font-weight: 600;
+    width:70% ;
+    height: 10%;
+}
+#loginbuttons{
+    display: flex;
+    justify-content: space-around;
+}
+#loginBut, #registerBut{
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+/* ------------------------------------------- */
+
+/* =============Content============= */
+/* =============Content============= */
+/* =============Content============= */
