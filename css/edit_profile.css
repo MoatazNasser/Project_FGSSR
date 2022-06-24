@@ -1,7 +1,8 @@
 html {
     scroll-behavior: smooth;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin-top: 0px;
     margin-left: 0px;
@@ -12,13 +13,14 @@ html {
 
 
 
-#header{
+#header {
     height: 142px;
     background-color: #001125f8;
     display: flex;
     justify-content: space-around;
 }
-#headContain{
+
+#headContain {
     width: 1100px;
     height: 142px;
     background-color: #001125;
@@ -26,21 +28,25 @@ html {
     justify-content: space-between;
     /* position: relative; */
 }
-#headLogo{
+
+#headLogo {
     /* position: absolute; */
     /* left: 30px; */
 }
-#logonamecont{
+
+#logonamecont {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#logo1{
+
+#logo1 {
     height: 142px;
     width: 142px;
     padding: 5px;
 }
-#facName{
+
+#facName {
     min-width: 100px;
     color: white;
     font-size: 18px;
@@ -50,12 +56,14 @@ html {
     justify-content: center;
     align-items: center;
 }
-#searchsocialcont{
+
+#searchsocialcont {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#headSearch{
+
+#headSearch {
     width: fit-content;
     padding-left: 10px;
     padding-right: 10px;
@@ -65,7 +73,8 @@ html {
     align-items: center;
     position: relative;
 }
-#headSearchInput{
+
+#headSearchInput {
     border-radius: 20px;
     height: 40px;
     padding-left: 20px;
@@ -73,19 +82,20 @@ html {
     font-size: larger;
     color: #001125;
 }
-#headSearchInput:focus { 
-    outline: none ;
+
+#headSearchInput:focus {
+    outline: none;
     border-color: #719ECE;
     box-shadow: 0 0 10px #719ECE;
 }
 
-#searchLens{
+#searchLens {
     width: 30px;
     height: 30px;
     /* background-color: red; */
     padding-left: 10px;
     border-left: 2px solid black;
-    display: flex ;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -94,38 +104,54 @@ html {
     cursor: pointer;
 }
 
-#searchLensLogo{
+#searchLensLogo {
     width: 25px;
     height: 25px;
 }
-#headSocial{
+
+#headSocial {
     /* background-color: red; */
     margin-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#headSocial a img{
+
+#headSocial a img {
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
+
 /* ----------------- intro start here ----------------- */
-#mainContainStart{
+.menustyle,
+.menustyle:hover,
+.menustyle.focus,
+.menustyle.active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#mainContainStart {
     height: 750px;
     /* background-color: red; */
     background-image: url(../image/DataMetrics1.jpg);
     display: flex;
-    justify-content: space-around; /* To Be center*/
-    background-position: left; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    justify-content: space-around;
+    /* To Be center*/
+    background-position: left;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
     background-size: 100% 100%;
-    opacity: 100%; 
+    opacity: 100%;
     position: relative;
-    overflow:auto;
+    overflow: auto;
 }
-#mainContainStartMenu{
-    min-width: 950px; /* To Be 66%*/
+
+#mainContainStartMenu {
+    min-width: 950px;
+    /* To Be 66%*/
     height: 750px;
     display: flex;
     justify-content: space-evenly;
@@ -133,218 +159,255 @@ html {
     flex-direction: row-reverse;
     /* position: absolute;  To Be */
     position: absolute;
-    opacity: 100% ;
+    opacity: 100%;
     z-index: 2;
 }
-#mainContainStartMenu1{
-    width: 66%; /* To Be 66%*/
+
+#mainContainStartMenu1 {
+    width: 66%;
+    /* To Be 66%*/
     height: 750px;
     position: absolute;
     z-index: 0;
-    opacity: 50% ;
-    background-image:linear-gradient(to bottom , #719eceb4 30% , rgba(255, 255, 255, 0) 80% );
+    opacity: 50%;
+    background-image: linear-gradient(to bottom, #719eceb4 30%, rgba(255, 255, 255, 0) 80%);
 }
-#linesmainContainStartMenu{
-    width: 1100px; /* To Be 66%*/
+
+#linesmainContainStartMenu {
+    width: 1100px;
+    /* To Be 66%*/
     height: 750px;
     position: absolute;
     z-index: 1;
-    opacity: 100% ;
+    opacity: 100%;
     /* background-image:linear-gradient(to bottom , #719eceb4 30% , rgba(255, 255, 255, 0) 80% ); */
 }
-#eduPro1 , #applyFor1 , #depOf1 , #about1 , #home1, #contactUs1, #faq1{
+
+#eduPro1,
+#applyFor1,
+#depOf1,
+#about1,
+#home1,
+#contactUs1,
+#faq1 {
     /* position: absolute; */
     /* text inside bars */
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;  /* to be relevant after edit positions for responsive*/
+    position: relative;
+    /* to be relevant after edit positions for responsive*/
     /* ------- display to center text and circles ---- */
     font-size: large;
     font-weight: bold;
     text-align: center;
-    color:#001125ea;
-    text-shadow: 1px 1px 2px  rgba(255, 255, 255, 0.534);
+    color: #001125ea;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.534);
     border-radius: 20px 20px 0px 0px;
     padding-top: 20px;
     padding-right: 10px;
     padding-left: 10px;
     opacity: 80%;
-    background-image: linear-gradient(to top , #001125 5% , #83dcef ,#ef8354 );
+    background-image: linear-gradient(to top, #001125 5%, #83dcef, #ef8354);
     cursor: pointer;
     transition: .5s;
 }
-#canvaswindow{
+
+#canvaswindow {
     border: 2px solid red;
     position: absolute;
     z-index: 20;
 }
-.lines{
+
+.lines {
     z-index: 0;
     width: 134px;
     height: 4px;
     /* opacity: 0%; */
-    background-color:#ef8354;
+    background-color: #ef8354;
     position: absolute;
     transform-origin: left center;
     transition: .5s;
 }
-#line1{
-    transform : rotate(-68.5deg) scaleX(2.72); 
+
+#line1 {
+    transform: rotate(-68.5deg) scaleX(2.72);
     bottom: 208px;
     right: 150px;
 }
-#line2{
-    transform : rotate(237deg) scaleX(1.85);
+
+#line2 {
+    transform: rotate(237deg) scaleX(1.85);
     bottom: 210px;
     right: 149px;
 }
-#line3{
-    transform : rotate(-141deg) scalex(1.3);
+
+#line3 {
+    transform: rotate(-141deg) scalex(1.3);
     bottom: 419px;
     right: 281px;
 }
-#line4{
-    transform : rotate(-143.1deg) scalex(1.25);
+
+#line4 {
+    transform: rotate(-143.1deg) scalex(1.25);
     bottom: 529px;
     right: 416px;
 }
-#line5{
-    transform : rotate(-49.1deg) scalex(1.5);
+
+#line5 {
+    transform: rotate(-49.1deg) scalex(1.5);
     bottom: 476px;
     right: 682px;
 }
-#line6{
-    transform : rotate(-51.1deg) scalex(1.6);
+
+#line6 {
+    transform: rotate(-51.1deg) scalex(1.6);
     bottom: 309px;
     right: 817px;
 }
 
-.circle{
+.circle {
     /* circles */
-    width:16px;
+    width: 16px;
     height: 16px;
     background-color: #ef8354;
     position: absolute;
     border: 2px solid white;
     border-radius: 50%;
-    opacity: 100% ;
+    opacity: 100%;
     top: -8px;
     transition: .5s;
 
 }
+
 /* first bar  */
-#eduPro1{
-    width: 120px;  /*  121px */
+#eduPro1 {
+    width: 120px;
+    /*  121px */
     /* height: 70px;  */
     /* 550 600 */
     /* bottom: 0px;
     right: 14px; */
-    
+
 }
+
 /* ------all in javascript this part just for test ------- */
-#eduPro1:hover{
+#eduPro1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
 
     text-shadow: 2px 2px 5px #0c0c0cf1;
 }
 
 /* second bar */
-#applyFor1{
+#applyFor1 {
     width: 120px;
     /* height: 70px;     */
     /*210 270*/
     /* bottom: 0px;
     right: 148px; */
 }
-#applyFor1:hover{
+
+#applyFor1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
     text-shadow: 2px 2px 2px #0c0c0c88;
 }
+
 /* 3rd bar */
-#depOf1{
+#depOf1 {
     width: 120px;
     /* height: 70px;  */
     /* bottom: 0px;
     right: 282px; */
 }
-#depOf1:hover{
+
+#depOf1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
     text-shadow: 2px 2px 2px #0c0c0c88;
 }
-#about1{
+
+#about1 {
     width: 120px;
     /* height: 70px;  */
 
     /* bottom: 0px;
     right: 416px; */
 }
-#about1:hover{
+
+#about1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
     text-shadow: 2px 2px 5px #0c0c0cf1;
 }
-#home1{
+
+#home1 {
     width: 120px;
     /* height: 70px;  */
 
     /* bottom: 0px;
     right: 550px; */
 }
-#home1:hover{
+
+#home1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
     text-shadow: 2px 2px 5px #0c0c0cf1;
 }
-#contactUs1{
+
+#contactUs1 {
     width: 120px;
     /* height: 70px;  */
 
     /* bottom: 0px;
     right: 684px; */
 }
-#contactUs1:hover{
+
+#contactUs1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
     text-shadow: 2px 2px 5px #0c0c0cf1;
 }
-#faq1{
+
+#faq1 {
     width: 120px;
     /* height: 70px;  */
 
     /* bottom: 0px;
     right: 818px; */
 }
-#faq1:hover{
+
+#faq1:hover {
     box-shadow: 0px 0px 5px 5px rgba(77, 199, 236, 0.616);
-    background-image: linear-gradient(to bottom , #001125 5% , #83dcef ,#ef8354 );
-    color:#8be7f9;
+    background-image: linear-gradient(to bottom, #001125 5%, #83dcef, #ef8354);
+    color: #8be7f9;
     text-shadow: 2px 2px 5px #0c0c0cf1;
 }
+
 /* ---------------------spareMenu-------------- */
-#mainContainSplit{
+#mainContainSplit {
     min-height: 60px;
     background-color: #001125;
     border-top: 3px solid #8be7f942;
     border-bottom: 3px solid #8be7f942;
     display: flex;
-    justify-content: space-around; /* To Be center*/
+    justify-content: space-around;
+    /* To Be center*/
     align-items: center;
-    opacity: 100%; 
+    opacity: 100%;
     position: relative;
     /* overflow:auto; */
 }
-#splitmenuButton{
-    width:120px;
+
+#splitmenuButton {
+    width: 120px;
     /* height:54px; */
     display: flex;
     opacity: 100%;
@@ -356,12 +419,14 @@ html {
     z-index: 2;
     transition: .5s;
 }
-#mainContainSplit:hover #splitmenuButton{
+
+#mainContainSplit:hover #splitmenuButton {
     /* opacity: 0; */
 }
-#SButtoncontainer{
-    width:80px;
-    height:30px;
+
+#SButtoncontainer {
+    width: 80px;
+    height: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -371,31 +436,42 @@ html {
     animation-name: glow_1;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     animation-timing-function: linear;
     cursor: pointer;
     /* transition: .5s; */
 }
+
 @keyframes glow_1 {
-    from {box-shadow: 0px 0px 5px #8be7f962}
-    to{box-shadow: 0px 0px 1px #8be7f962}
+    from {
+        box-shadow: 0px 0px 5px #8be7f962
+    }
+
+    to {
+        box-shadow: 0px 0px 1px #8be7f962
+    }
 }
 
 
-#SButtonline1,#SButtonline2,#SButtonline3{
+#SButtonline1,
+#SButtonline2,
+#SButtonline3 {
     width: 55px;
     height: 2px;
     margin: 1.5px;
     background-color: #8be7f936;
     transition: .5s;
-    
+
 }
-#SButtonline2{
+
+#SButtonline2 {
     width: 65px;
 }
-#spareMenu{
+
+#spareMenu {
     min-height: 100%;
-    width: 950px; /* To Be 66%*/
+    width: 950px;
+    /* To Be 66%*/
     overflow: hidden;
     display: flex;
     justify-content: space-evenly;
@@ -405,10 +481,12 @@ html {
     opacity: 0%;
     transition: .5s;
 }
-#mainContainSplit:hover #spareMenu{
+
+#mainContainSplit:hover #spareMenu {
     /* opacity: 100%; */
 
 }
+
 #spareMenu div {
     width: 120px;
     height: 54px;
@@ -421,7 +499,7 @@ html {
     align-items: center;
     /* font-weight: bold; */
     text-align: center;
-    color:#8be7f9c5;
+    color: #8be7f9c5;
     background-color: #001125;
     /* border-left: 3px solid #8be7f942; */
     opacity: 80%;
@@ -431,7 +509,7 @@ html {
 }
 
 #spareMenu div:hover {
-    color:white;
+    color: white;
     border-left: 3px solid #65e1faef;
     border-right: 3px solid #65e1faef;
     background-color: #8be7f91a;
@@ -440,19 +518,21 @@ html {
     /* padding-left: 20px; */
 
 }
-#spareMenu div p{
+
+#spareMenu div p {
     font-weight: 400;
     transition: .2s;
 
 }
-#spareMenu div:hover p{
-    text-shadow: 0px 0px 4px  black;
+
+#spareMenu div:hover p {
+    text-shadow: 0px 0px 4px black;
     font-weight: 900;
 }
 
 
 /* -----------------mainbody---------------- */
-#mainContainPages{
+#mainContainPages {
     height: 870px;
     background-color: white;
     /* background-image: url(/image/background-site.jpg); */
@@ -461,13 +541,14 @@ html {
     display: flex;
     justify-content: flex-start;
     flex-wrap: nowrap;
-    opacity: 100%; 
+    opacity: 100%;
     position: relative;
-    overflow:auto;
+    overflow: auto;
 }
+
 /* ---------------User Account---------- */
 /* ---------------User Account---------- */
-#mainContainRightSide{
+#mainContainRightSide {
     width: 17%;
     height: 870px;
     display: flex;
@@ -477,12 +558,15 @@ html {
     background-color: #dce2e2;
     transition: .5s;
 }
-#accountContainer{
+
+#accountContainer {
     width: 90%;
     height: 100%;
     background-color: #00112598;
 }
-#accountHead , #accountFooter{
+
+#accountHead,
+#accountFooter {
     width: 100%;
     height: 50px;
     background-color: #001125;
@@ -491,20 +575,23 @@ html {
     justify-content: center;
     align-items: center;
 }
-#accountHead p{
+
+#accountHead p {
     font-size: larger;
     font-weight: 600;
 }
-#accountBody{
+
+#accountBody {
     width: 100%;
-    height: calc( 100% - 100px);
+    height: calc(100% - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: green; */
 }
-#bodyUserPic{
+
+#bodyUserPic {
     width: 100%;
     height: 20%;
     display: flex;
@@ -512,23 +599,26 @@ html {
     align-items: center;
     /* background-color: blue; */
 }
-#bodyUserData{
+
+#bodyUserData {
     width: 80%;
     height: 7%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top:2px solid #001125a6;
-    border-bottom:2px solid #001125a6;
+    border-top: 2px solid #001125a6;
+    border-bottom: 2px solid #001125a6;
     /* background-color: brown; */
 }
-#bodyUserData div{
+
+#bodyUserData div {
     color: #8be7f9;
     font-size: large;
     font-weight: 600;
 }
-#bodyMenu{
+
+#bodyMenu {
     width: 80%;
     height: 68%;
     display: flex;
@@ -538,7 +628,8 @@ html {
     margin-top: 20px;
     /* background-color: blueviolet; */
 }
-#bodyMenu div{
+
+#bodyMenu div {
     width: 90%;
     display: flex;
     justify-content: center;
@@ -554,13 +645,15 @@ html {
     cursor: pointer;
     transition: .3s;
 }
-#bodyMenu div:hover{
+
+#bodyMenu div:hover {
     padding-left: 10px;
     background-color: #001125e5;
     border-right: 2px solid #8be7f9;
     border-left: 2px solid #8be7f9;
 }
-#bodyLogOutEditProfile{
+
+#bodyLogOutEditProfile {
     width: 90%;
     height: 5%;
     display: flex;
@@ -568,7 +661,9 @@ html {
     justify-content: center;
     /* background-color: firebrick; */
 }
-#bodyLogOut , #bodyEditProfile{
+
+#bodyLogOut,
+#bodyEditProfile {
     width: 50%;
     font-size: medium;
     font-weight: 600;
@@ -579,34 +674,38 @@ html {
     color: #8be7f9;
     cursor: pointer;
 }
-#bodyLogOut{
-    border-right:2px solid #001125a6;
+
+#bodyLogOut {
+    border-right: 2px solid #001125a6;
 }
-/* ---------------User Account---------- */
 
 /* ---------------User Account---------- */
 
-#pagesbodyareaSigma{
+/* ---------------User Account---------- */
+
+#pagesbodyareaSigma {
     width: 66%;
     height: 870px;
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
-    opacity: 100% ;
+    opacity: 100%;
     z-index: 2;
     margin-left: 9px;
 }
+
 /* -------------Sigma sign insde body-------------- */
-#sigmaTop{
+#sigmaTop {
     width: 100%;
     height: 50px;
-    display: flex; 
-    justify-content: flex-start; 
+    display: flex;
+    justify-content: flex-start;
     /* flex-wrap: wrap; */
-    
+
 }
-#sigmaTopStraight{
+
+#sigmaTopStraight {
     height: 50px;
     width: 89%;
     background-color: #001125;
@@ -615,8 +714,9 @@ html {
     align-items: center;
     position: relative;
 }
+
 /* ------------ page name and icon --------- */
-#sigmaTopStraightContainer{
+#sigmaTopStraightContainer {
     position: relative;
     left: 60px;
     width: 500px;
@@ -627,37 +727,44 @@ html {
     opacity: 80%;
     /* background-color: red; */
 }
-#sigmaTopStraightPageIcon img{
-    width:40px;
+
+#sigmaTopStraightPageIcon img {
+    width: 40px;
     height: 40px;
     margin-left: 20px;
     margin-right: 20px;
 }
-#sigmaTopStraightPageName{
+
+#sigmaTopStraightPageName {
     /* margin-left: 20px; */
     margin-right: 20px;
 }
-#sigmaTopStraightPageName p{
-    color:#83dcef;  /*#ef8354*/
+
+#sigmaTopStraightPageName p {
+    color: #83dcef;
+    /*#ef8354*/
     font-size: larger;
     font-weight: 600;
 }
+
 /* ------------ page name and icon --------- */
 
-#sigmaTopCurve{
+#sigmaTopCurve {
     height: 50px;
     width: 11%;
     /* background-color: red; */
 }
-#myCanvas{
+
+#myCanvas {
     /* border:1px solid #000000; */
     /* transition: 2s; */
     /* position: absolute;  */
     /* z-index: 5;  */
 }
+
 /* ----------------Sigma Side--------------------------- */
 /* -------------------Menu Button ------------------ */
-#buttonback{
+#buttonback {
     width: 15px;
     height: 186px;
     background-color: #001125;
@@ -667,10 +774,12 @@ html {
     top: 342px;
     transition: .5s;
 }
-#buttonback:hover{
+
+#buttonback:hover {
     /* left: 10px; */
 }
-#menuButton{
+
+#menuButton {
     width: 50px;
     height: 140px;
     /* border: 2px solid red; */
@@ -679,24 +788,25 @@ html {
     align-items: center;
     position: absolute;
     z-index: 20;
-    left:0px;
+    left: 0px;
     top: 314px;
     cursor: pointer;
     transition: .5s;
 }
-#sigmaSide:hover #menuButton{
+
+#sigmaSide:hover #menuButton {
     /* left:232px; */
     /* transform: scale(.8); */
     /* opacity: 0%; */
-    }
+}
 
-#menuText{
+#menuText {
     color: #8be7f9c5;
     position: absolute;
     font-size: large;
     opacity: 50%;
     transform: rotate(-90deg);
-    left: -17px ;
+    left: -17px;
     top: 55px;
     letter-spacing: 5px;
     /* animation-name: letters;
@@ -706,11 +816,12 @@ html {
     animation-timing-function: linear; */
 }
 
-#sigmaSide:hover #menuText{
-/* left:232px; */
-/* opacity: 0%; */
+#sigmaSide:hover #menuText {
+    /* left:232px; */
+    /* opacity: 0%; */
 }
-#menuButtonContainer{
+
+#menuButtonContainer {
     width: 28px;
     height: 64px;
     /* background-color: blue; */
@@ -725,13 +836,22 @@ html {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: ease;
-    
+
 }
+
 @keyframes move1 {
-    from {right: 4px}
-    to{right: 0px}
+    from {
+        right: 4px
+    }
+
+    to {
+        right: 0px
+    }
 }
-#buttonLine1 ,#buttonLine2 ,#buttonLine3{
+
+#buttonLine1,
+#buttonLine2,
+#buttonLine3 {
     width: 2px;
     height: 30px;
     margin-left: 4px;
@@ -739,55 +859,69 @@ html {
     animation-name: glow;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-direction:alternate;
+    animation-direction: alternate;
     animation-timing-function: linear;
 }
+
 @keyframes glow {
-    from {box-shadow: 0px 0px .5px white}
-    to{box-shadow: 0px 0px 1px white}
+    from {
+        box-shadow: 0px 0px .5px white
+    }
+
+    to {
+        box-shadow: 0px 0px 1px white
+    }
 }
-#buttonLine1{
-    height:60px;
+
+#buttonLine1 {
+    height: 60px;
 }
-#buttonLine2{
-    height:45px;
+
+#buttonLine2 {
+    height: 45px;
 }
-#buttonLine3{
-    height:30px;
+
+#buttonLine3 {
+    height: 30px;
 }
+
 /* -------------------Menu Button ------------------ */
-#sigmaSide{
-    width:350px;
+#sigmaSide {
+    width: 350px;
     min-height: 770px;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow:hidden;
+    overflow: hidden;
     position: relative;
     transition: .5s;
 }
-#sigmaSide:hover{
+
+#sigmaSide:hover {
     /* width:293px; */
 }
-#sigmaSideFixed{
-    width:50px;
+
+#sigmaSideFixed {
+    width: 50px;
     min-height: 100%;
-    background-color:#001125;
+    background-color: #001125;
     opacity: 100%;
     position: absolute;
     left: -50px;
     z-index: 5;
     transition: .5s;
 }
-#sigmaSide:hover #sigmaSideFixed{
-/* left: 0px; */
+
+#sigmaSide:hover #sigmaSideFixed {
+    /* left: 0px; */
 }
-#sigmaSidemove{
+
+#sigmaSidemove {
     width: 433px;
     height: 433px;
     transform-origin: left top;
-    transform: rotate( 56deg)  ;
+    transform: rotate(56deg);
     position: absolute;
     left: -180px;
     top: 26px;
@@ -795,14 +929,16 @@ html {
     transition: .5s;
     z-index: 5;
 }
-#sigmaSide:hover #sigmaSidemove{
+
+#sigmaSide:hover #sigmaSidemove {
     /* left: 50px; */
 }
-#sigmaSidemoveGray{
+
+#sigmaSidemoveGray {
     width: 433px;
     height: 433px;
     transform-origin: left top;
-    transform: rotate( 56deg)  ;
+    transform: rotate(56deg);
     position: absolute;
     left: -195px;
     top: 26px;
@@ -811,16 +947,17 @@ html {
     z-index: 6;
     transition: .5s;
 }
-#sigmaSide:hover #sigmaSidemoveGray{
+
+#sigmaSide:hover #sigmaSidemoveGray {
     /* left: 0px; */
     /* opacity: 100%; */
 }
 
-#sigmaSidemove1{
+#sigmaSidemove1 {
     width: 433px;
     height: 433px;
     transform-origin: left bottom;
-    transform: rotate( -56deg) ;
+    transform: rotate(-56deg);
     position: absolute;
     left: -180px;
     top: 312px;
@@ -828,14 +965,16 @@ html {
     z-index: 5;
     transition: .5s;
 }
-#sigmaSide:hover #sigmaSidemove1{
+
+#sigmaSide:hover #sigmaSidemove1 {
     /* left: 50px; */
 }
-#sigmaSidemove1Gray{
+
+#sigmaSidemove1Gray {
     width: 433px;
     height: 433px;
     transform-origin: left bottom;
-    transform: rotate( -56deg) ;
+    transform: rotate(-56deg);
     position: absolute;
     left: -195px;
     top: 312px;
@@ -844,26 +983,30 @@ html {
     opacity: 0%;
     transition: .5s;
 }
-#sigmaSide:hover #sigmaSidemove1Gray{
+
+#sigmaSide:hover #sigmaSidemove1Gray {
     /* left: 0px; */
     /* opacity: 100%; */
 }
-#sigmaSidemoveMenu{
+
+#sigmaSidemoveMenu {
     color: white;
     font-size: larger;
     position: absolute;
     top: 200px;
     left: -220px;
     opacity: 0%;
-    z-index: 7; 
+    z-index: 7;
     text-shadow: 2px 2px 1px black;
     transition: .8s;
 }
-#sigmaSide:hover #sigmaSidemoveMenu{
+
+#sigmaSide:hover #sigmaSidemoveMenu {
     /* left: 0px; */
     /* opacity: 100%; */
 }
-#sigmaSidemoveMenu ul li{
+
+#sigmaSidemoveMenu ul li {
     list-style: none;
     position: relative;
     margin-top: 15px;
@@ -873,48 +1016,64 @@ html {
     cursor: pointer;
     transition: .2s;
 }
-#unline1 ,#unline2,#unline3,#unline4,#unline5,#unline6,#unline7{
+
+#unline1,
+#unline2,
+#unline3,
+#unline4,
+#unline5,
+#unline6,
+#unline7 {
     width: 0px;
     height: 1px;
     opacity: 0%;
     background-color: #9c9c9c;
-    margin: 0px ;
+    margin: 0px;
     box-shadow: 2px 2px 1px black;
     transition: 1.5s;
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline1{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline1 {
     /* width: 48px; */
     /* opacity: 100%; */
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline2{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline2 {
     /* width: 75px; */
     /* opacity: 100%; */
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline3{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline3 {
     /* width: 125px; */
     /* opacity: 100%; */
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline4{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline4 {
     /* width: 170px; */
     /* opacity: 100%; */
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline5{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline5 {
     /* width: 145px; */
     /* opacity: 100%; */
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline6{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline6 {
     /* width: 61px; */
     /* opacity: 100%; */
 }
-#sigmaSide:hover #sigmaSidemoveMenu ul #unline7{
+
+#sigmaSide:hover #sigmaSidemoveMenu ul #unline7 {
     /* width: 47px; */
     /* opacity: 100%; */
 }
-#sigmaSidemoveMenu ul li:hover{
+
+#sigmaSidemoveMenu ul li:hover {
     padding-left: 20px;
     color: #ef8354;
 }
-#sigmaSidemoveMenu ul li:hover p{
+
+#sigmaSidemoveMenu ul li:hover p {
     background-color: #ef8354;
 }
 
@@ -928,32 +1087,37 @@ html {
 /* =============Content============= */
 a {
     color: #8be7f9;
-    text-decoration: none; /* no underline */
+    text-decoration: none;
+    /* no underline */
 }
-.Abutton{
-    box-shadow: 3px 3px 3px  gray ;  
+
+.Abutton {
+    box-shadow: 3px 3px 3px gray;
     color: #8be7f9c5;
     background-color: #001125;
     cursor: pointer;
 }
-.Abutton:hover{
-    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
-    color: #8be7f9;
-    background-color: #001125f1;
-}
-.Abuttonn{
-    box-shadow: 2px 2px 1px  rgba(155, 155, 155, 0.397) ;  
-    color: #8be7f9c5;
-    background-color: #001125;
-    cursor: pointer;
-}
-.Abuttonn:hover{
-    box-shadow: inset -2px -2px 2px  #8be7f9c5 ;
+
+.Abutton:hover {
+    box-shadow: inset -2px -2px 2px #8be7f9c5;
     color: #8be7f9;
     background-color: #001125f1;
 }
 
-#contentHere{
+.Abuttonn {
+    box-shadow: 2px 2px 1px rgba(155, 155, 155, 0.397);
+    color: #8be7f9c5;
+    background-color: #001125;
+    cursor: pointer;
+}
+
+.Abuttonn:hover {
+    box-shadow: inset -2px -2px 2px #8be7f9c5;
+    color: #8be7f9;
+    background-color: #001125f1;
+}
+
+#contentHere {
     width: 85%;
     height: 770px;
     padding: 15px;
@@ -961,14 +1125,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    top:50px;
+    top: 50px;
     left: 55px;
     z-index: 1;
     /* background-color: red; */
-    
+
     overflow: auto;
 }
-#editContainer{
+
+#editContainer {
     width: 70%;
     height: 85%;
     display: flex;
@@ -983,25 +1148,27 @@ a {
     /* background-color: blue; */
 }
 
-#loginpic{
+#loginpic {
     position: absolute;
     top: -60px;
-    right: calc( (100% / 2 ) - 60px);
+    right: calc((100% / 2) - 60px);
     width: 120px;
     height: 120px;
     /* background-color: red; */
     background-image: url(../image/userPic.png);
     background-size: 120px 120px;
 }
-#popupTerms{
-    display: none;/*block*/
+
+#popupTerms {
+    display: none;
+    /*block*/
     width: 50%;
     height: 60%;
     position: absolute;
     top: 17%;
     background-color: #001125d2;
     border: 2px solid #001125;
-    box-shadow: 2px 2px 4px #8be7f9c5 ;
+    box-shadow: 2px 2px 4px #8be7f9c5;
     padding: 20px;
     font-size: medium;
     font-weight: 600;
@@ -1009,20 +1176,22 @@ a {
     border-radius: 15px;
     z-index: 2;
 }
-#popupTerms p{
+
+#popupTerms p {
     height: 90%;
     font-size: medium;
     font-weight: 600;
     color: #8be7f9;
     overflow: hidden;
 }
-#popUpClose{
+
+#popUpClose {
     height: 10%;
     width: 100%;
     /* background-color: red; */
 }
 
-#saved{
+#saved {
     visibility: hidden;
     height: 100%;
     width: 50px;
@@ -1033,7 +1202,24 @@ a {
     font-size: large;
     margin-right: 15px;
 }
-#editName,#editNamefield,#editPass,#editPassfield,#regID,#regIDfield,#regEmail,#editMobile,#regCountry,#regGender,#editUploadID,#regTerms,#regEmailfield,#editMobilefield,#regCountryfield,#editUploadIDfield,#regTermsfield{
+
+#editName,
+#editNamefield,
+#editPass,
+#editPassfield,
+#regID,
+#regIDfield,
+#regEmail,
+#editMobile,
+#regCountry,
+#regGender,
+#editUploadID,
+#regTerms,
+#regEmailfield,
+#editMobilefield,
+#regCountryfield,
+#editUploadIDfield,
+#regTermsfield {
     width: 75%;
     height: 7%;
     display: flex;
@@ -1042,39 +1228,46 @@ a {
     color: #001125;
     font-size: larger;
     font-weight: 600;
-    overflow:hidden;
+    overflow: hidden;
     /* background-color: red; */
 }
-#UploadID{
+
+#UploadID {
     width: 100%;
     height: 100%;
     padding-left: 15px;
     margin-bottom: 5px;
     margin-top: 5px;
 }
-#editUploadID{
+
+#editUploadID {
     height: 6%;
 }
-#loginpic1{
+
+#loginpic1 {
     width: 75%;
     height: 8%;
     /* background-color: red; */
 }
-#editNamefield{
+
+#editNamefield {
     width: 75%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
 }
-#regGenderfield{
+
+#regGenderfield {
     width: 75%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 15px;
 }
-#Genderfield1,#Genderfield2{
+
+#Genderfield1,
+#Genderfield2 {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -1083,7 +1276,13 @@ a {
     font-size: larger;
     font-weight: 600;
 }
-#fname, #lname , #ID,#Email,#Mobile,#Country{
+
+#fname,
+#lname,
+#ID,
+#Email,
+#Mobile,
+#Country {
     width: 50%;
     height: 100%;
     border-radius: 10px;
@@ -1093,7 +1292,12 @@ a {
     font-size: medium;
     padding-left: 15px;
 }
-#Pass, #ID,#Email,#Mobile,#Country{
+
+#Pass,
+#ID,
+#Email,
+#Mobile,
+#Country {
     width: 100%;
     height: 100%;
     border-radius: 10px;
@@ -1103,40 +1307,46 @@ a {
     font-size: medium;
     padding-left: 15px;
 }
-#Terms2{
+
+#Terms2 {
     margin-left: 10px;
     display: flex;
     justify-content: flex-start;
 }
-#Terms2 p{
+
+#Terms2 p {
     color: rgb(0, 153, 255);
     cursor: pointer;
     transition: .5s;
 }
-#Terms2 p:hover{
+
+#Terms2 p:hover {
     background-color: #00112565;
     border-radius: 3px;
     color: rgb(0, 55, 92);
     cursor: pointer;
 }
-#loginmessage{
+
+#loginmessage {
     visibility: hidden;
-    display: flex; 
+    display: flex;
     justify-content: flex-start;
     align-items: center;
     color: red;
     font-size: medium;
     font-weight: 600;
-    width:70% ;
+    width: 70%;
     height: 10%;
 }
-#editbuttons{
+
+#editbuttons {
     width: 70%;
     height: 6.5%;
     display: flex;
     justify-content: flex-end;
 }
-#editBut{
+
+#editBut {
     font-size: large;
     display: flex;
     justify-content: center;
@@ -1146,6 +1356,7 @@ a {
     padding-right: 20px;
     border-radius: 5px;
 }
+
 /* ------------------------------------------- */
 
 /* =============Content============= */
@@ -1153,66 +1364,73 @@ a {
 /* =============Content============= */
 
 /* ----------------Sigma Side background--------------------------- */
-#sigmaSideBG{
+#sigmaSideBG {
     width: 326px;
     height: 770px;
     /* background-color: red; */
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    overflow:hidden;
+    overflow: hidden;
     position: absolute;
-    top:50px ;
+    top: 50px;
     /* left: 0px; */
     transition: .5s;
     z-index: -1;
 }
-#sigmaSideFixedBG{
-    width:50px;
+
+#sigmaSideFixedBG {
+    width: 50px;
     min-height: 100%;
     opacity: 100%;
-    background-color:#DCE2E2;
+    background-color: #DCE2E2;
     display: flex;
     flex-direction: column;
     z-index: 2;
 }
-#sigmaSideFixedBGTop{
-    min-width:40px;
+
+#sigmaSideFixedBGTop {
+    min-width: 40px;
     height: 102px;
     background-color: #DCE2E2;
 }
-#sigmaSideFixedBGmid{
-    min-width:40px;
+
+#sigmaSideFixedBGmid {
+    min-width: 40px;
     height: 566px;
     background-color: #DCE2E2;
 }
-#sigmaSideFixedBGbottom{
-    min-width:40px;
+
+#sigmaSideFixedBGbottom {
+    min-width: 40px;
     height: 102px;
     background-color: #DCE2E2;
 }
-#sigmaSidemoveBG{
+
+#sigmaSidemoveBG {
     width: 433px;
     height: 433px;
     transform-origin: left top;
-    transform: rotate( 56deg) scale(1.07);
+    transform: rotate(56deg) scale(1.07);
     position: absolute;
     left: 50px;
     top: 0px;
     background-color: #DCE2E2;
     z-index: 1;
 }
-#sigmaSidemove1BG{
+
+#sigmaSidemove1BG {
     width: 433px;
     height: 433px;
     transform-origin: left bottom;
-    transform: rotate( -56deg) scale(1.07);
+    transform: rotate(-56deg) scale(1.07);
     position: absolute;
     left: 50px;
     top: 335px;
     background-color: #DCE2E2;
     z-index: 1;
 }
+
 /* #sigmaSidemoveGrayBG{
     width: 433px;
     height: 433px;
@@ -1239,32 +1457,35 @@ a {
 } */
 /* ----------------Sigma Side background--------------------------- */
 
-#sigmaBottom{
+#sigmaBottom {
     width: 100%;
     height: 50px;
-    display: flex; 
-    justify-content: flex-start; 
+    display: flex;
+    justify-content: flex-start;
     /* background-color: #001125; */
     /* flex-wrap: wrap; */
 }
-#sigmaBottomStraight{
+
+#sigmaBottomStraight {
     height: 50px;
     width: 89%;
     background-color: #001125;
 }
-#sigmaBottomCurve{
+
+#sigmaBottomCurve {
     height: 50px;
     width: 11%;
     /* transform: scaleX(-1);*/
-    transform: scaleY(-1); 
+    transform: scaleY(-1);
     /* background-color: red; */
 }
+
 /* ---------------sigma shape background------------------- */
 
 
 /* ---------------sigma shape background------------------- */
-#pagesbodyareaBackground{
-/* width: 64%;
+#pagesbodyareaBackground {
+    /* width: 64%;
 height: 870px;
 position: absolute;
 z-index: 1;
@@ -1273,7 +1494,7 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
 }
 
 /* --------------------- up Botton ------------------ */
-#upBotton{
+#upBotton {
     position: fixed;
     right: 35px;
     bottom: 90px;
@@ -1289,24 +1510,25 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
     cursor: pointer;
     transition: .5s;
 }
-#arrow1{
-    
-    border-top: 12px solid #43b1ca42 ;
-    border-left: 12px solid  #8be7f942 ;
-    border-right: 12px solid transparent ;
-    border-bottom: 12px solid transparent ;
-    
+
+#arrow1 {
+
+    border-top: 12px solid #43b1ca42;
+    border-left: 12px solid #8be7f942;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+
     position: relative;
     top: 2px;
     transform: rotate(45deg);
 }
 
-#arrow2{
-    border-top: 12px solid #001125 ;
-    border-left: 12px solid  #001125 ;
-    border-right: 12px solid transparent ;
-    border-bottom: 12px solid transparent ;
-    
+#arrow2 {
+    border-top: 12px solid #001125;
+    border-left: 12px solid #001125;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+
     position: absolute;
     top: 26px;
     transform: rotate(45deg);
@@ -1315,18 +1537,19 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
 
 /* --------------------- up Botton ------------------ */
 /* ---------------------------------------------------- */
-#footer{
-    
+#footer {
+
     height: 80px;
     background-color: #001125;
     border-top: 3px solid #8be7f942;
     border-bottom: 3px solid #8be7f942;
     display: flex;
-    justify-content: space-around; /* To Be center*/
+    justify-content: space-around;
+    /* To Be center*/
     align-items: center;
 }
 
-#footerContain{
+#footerContain {
     width: 1100px;
     height: 74px;
     background-color: #001125;
@@ -1334,20 +1557,22 @@ background-image:linear-gradient(to right , #719eceb4 30% , rgba(255, 255, 255, 
     justify-content: space-between;
     align-items: center;
 }
-#footerSocial{
+
+#footerSocial {
     /* background-color: red; */
     margin-right: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#footerSocial a img{
+
+#footerSocial a img {
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-#footercopyright{
+#footercopyright {
     margin-left: 50px;
-    color:#BFC0C0 ;
+    color: #BFC0C0;
 }

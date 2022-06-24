@@ -1,0 +1,445 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+#header {
+    width: 100%;
+    height: 80px;
+    background-color: #001125f8;
+    display: flex;
+    justify-content: flex-start;
+    border-top: 3px solid #8be7f942;
+    border-bottom: 3px solid #8be7f942;
+}
+
+#emptyRight {
+    width: 17%;
+    /*10-17%*/
+    /* background-color: red; */
+}
+
+#headContain {
+    width: 79%;
+    height: 74px;
+    background-color: #001125;
+    display: flex;
+    justify-content: space-between;
+
+    /* position: relative; */
+}
+
+#logonamecont {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo1 {
+    height: 75px;
+    width: 75px;
+    padding: 5px;
+}
+
+#facName {
+    min-width: 100px;
+    color: #8be7f9;
+    font-size: 18px;
+    font-weight: 900;
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logincont {
+    visibility: hidden;
+    /*visible*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginregistercont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#headlogin {
+    color: #8be7f9;
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 50px;
+    text-decoration: none;
+    /* no underline */
+}
+
+#headregister {
+    margin-right: 20px;
+}
+
+/* ----------------- intro start here ----------------- */
+.menustyle,
+.menustyle:hover,
+.menustyle.focus,
+.menustyle.active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* -----------------mainbody---------------- */
+#mainContainPages {
+    height: 820px;
+    background-color: white;
+    /* background-image: url(/image/background-site.jpg); */
+    /* background-repeat: repeat;  */
+    /* background-size: 150px 150px; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    opacity: 100%;
+    position: relative;
+    overflow: auto;
+}
+
+#mainContainRightSide {
+    width: 17%;
+    /*10-17%*/
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    /* padding: 5px 5px; */
+    position: relative;
+    background-color: #0011257a;
+    opacity: 100%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+#pagesbodyareaSigma {
+    width: 79%;
+    height: 820px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: relative;
+    opacity: 100%;
+    z-index: 2;
+    margin-left: 9px;
+}
+
+/* -------------Sigma sign insde body-------------- */
+#sigmaTop {
+    width: 100%;
+    height: 50px;
+    background-color: #001125;
+
+
+}
+
+#contentHere {
+    width: 100%;
+    height: 720px;
+    padding: 15px;
+    /* position: absolute; */
+    top: 50px;
+    left: 55px;
+    z-index: 1;
+    background-color: #dce2e2;
+    overflow: auto;
+}
+
+/* ----------------Sigma Side background--------------------------- */
+
+#sigmaBottom {
+    width: 100%;
+    height: 50px;
+    background-color: #001125;
+
+}
+
+/* ---------------------------------------------------- */
+#footer {
+
+    height: 50px;
+    background-color: #001125;
+    border-top: 3px solid #8be7f942;
+    border-bottom: 3px solid #8be7f942;
+    display: flex;
+    justify-content: space-around;
+    /* To Be center*/
+    align-items: center;
+}
+
+#footercopyright {
+    color: #BFC0C0;
+}
+
+/* ---------------User Account---------- */
+/* ---------------User Account---------- */
+/* ---------------User Account---------- */
+/* ---------------User Account---------- */
+/* ---------------User Account---------- */
+a {
+    color: #8be7f9;
+    text-decoration: none;
+    /* no underline */
+}
+
+#mainContainRightSide {
+    width: 17%;
+    height: 820px;
+    display: flex;
+    justify-content: center;
+    /* padding: 5px 5px; */
+    position: relative;
+    background-color: #dce2e2;
+    transition: .5s;
+}
+
+#accountContainer {
+    width: 90%;
+    height: 100%;
+    background-color: #00112598;
+}
+
+#accountHead,
+#accountFooter {
+    width: 100%;
+    height: 50px;
+    background-color: #001125;
+    color: #8be7f9c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accountHead p {
+    font-size: larger;
+    font-weight: 600;
+}
+
+#accountBody {
+    width: 100%;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+}
+
+#bodyUserPic {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+
+#bodyUserData {
+    width: 80%;
+    height: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #001125a6;
+    border-bottom: 2px solid #001125a6;
+    /* background-color: brown; */
+}
+
+#bodyUserData div {
+    color: #8be7f9;
+    font-size: large;
+    font-weight: 600;
+}
+
+#bodyMenu {
+    width: 80%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: blueviolet; */
+}
+
+#bodyMenu div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    color: #8be7f9;
+    font-size: large;
+    font-weight: 600;
+    background-color: #0011258c;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#bodyMenu div:hover {
+    padding-left: 10px;
+    background-color: #001125e5;
+    border-right: 2px solid #8be7f9;
+    border-left: 2px solid #8be7f9;
+}
+
+#bodyLogOutEditProfile {
+    width: 90%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: firebrick; */
+}
+
+#bodyLogOut,
+#bodyEditProfile {
+    width: 70%;
+    font-size: large;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+    color: #8be7f9;
+    cursor: pointer;
+}
+
+#bodyLogOut {
+    border-right: 2px solid #001125a6;
+    border-left: 2px solid #001125a6;
+}
+
+/* ---------------User Account---------- */
+
+/*--------------------content Here-------------------*/
+
+
+.addResults {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    background-color: #00112539;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.addResults2 {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00112539;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.A1 {
+    width: 15%;
+}
+
+.A3 {
+    width: 15%;
+}
+
+.A2 {
+    width: 65%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #001125;
+    padding-left: 15px;
+    margin-right: 20px;
+    font-size: large;
+}
+
+.Titles,
+.fields {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.T1 {
+    width: 33.33%;
+    text-align: center;
+    font-weight: 800;
+    font-size: large;
+    background-color: #00112561;
+    padding: 5px;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.56);
+    border-left: 2px solid #001125;
+}
+
+.T2 {
+    width: 33.33%;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: large;
+    background-color: #00112521;
+    margin-top: 5px;
+    padding: 5px;
+    border-left: 2px solid #0011255c;
+}
+
+.T22 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.butt {
+    font-weight: bold;
+    color: #8be7f9;
+    background-color: #001125df;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 7px;
+    box-shadow: inset 2px 2px 5px #8be7f97a;
+    border: 1px solid #0011257f;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.butt:hover {
+    box-shadow: inset -2px -2px 5px #8be7f97a;
+}
+
+.Bot {
+    height: 20px;
+    width: 100%;
+    border-left: 2px solid #001125;
+    background-color: #00112561;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+/*--------------------content Here-------------------*/

@@ -17,7 +17,7 @@ loginBut.onmouseenter = function () {
 
 loginBut.onclick = function () {
     if (field1.value == UserID && field2.value == UserPassword) {
-        window.location.href = "S2_Id_Verification.html";
+        window.location.href = "Super_create_account.html";
     }
     else {
         loginmessage.style.visibility = "visible"

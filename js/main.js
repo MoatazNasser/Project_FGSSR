@@ -1,76 +1,5 @@
 
-let c1 = document.getElementById("circle_1");
-// console.log(c1)
-let c1Location = c1.getBoundingClientRect()
-// console.log(c1Location)
 
-// var c = document.getElementById("myCanvas");
-// var ctx = c.getContext("2d")
-// console.log(ctx)
-// ctx.beginPath();
-// ctx.moveTo(210, 100);
-// ctx.lineTo(315, 70);
-// ctx.strokeStyle = "orange";
-// ctx.stroke();
-
-// let homeEl = document.getElementById("home")
-// let aboutEl = document.getElementById("aboutus")
-
-// homeEl.onmouseover = function () {
-//     homeEl.style.height = "150px";
-//     ctx.reset();
-//     move1 = c.getContext("2d");
-//     move1.beginPath();
-//     move1.moveTo(210, 100);
-//     move1.lineTo(315, 50);
-//     ctx.strokeStyle = "orange";
-//     move1.stroke();
-// }
-// homeEl.onmouseleave = function () {
-//     homeEl.style.height = "130px";
-//     move1.reset();
-//     ctx.beginPath();
-//     ctx.moveTo(210, 100);
-//     ctx.lineTo(315, 70);
-//     ctx.strokeStyle = "orange";
-//     ctx.stroke();
-// }
-
-// aboutEl.onmouseover = function () {
-//     aboutEl.style.height = "150px";
-//     ctx.reset();
-//     move2 = c.getContext("2d");
-//     move2.beginPath();
-//     move2.moveTo(210, 50);
-//     move2.lineTo(315, 70);
-//     ctx.strokeStyle = "orange";
-//     move2.stroke();
-
-// }
-// aboutEl.onmouseleave = function () {
-//     aboutEl.style.height = "100px";
-//     move2.reset();
-//     ctx.beginPath();
-//     ctx.moveTo(210, 100);
-//     ctx.lineTo(315, 70);
-//     ctx.strokeStyle = "orange";
-//     ctx.stroke();
-// }
-
-// هو دا
-// let homeEl = document.getElementById("home")
-// let aboutEl = document.getElementById("aboutus")
-// let line1 = document.getElementById("line1")
-
-// homeEl.onmouseover = function () {
-//     homeEl.style.height = "150px";
-//     line1.style.transform = "rotate(-21deg) scaleX(1.1)";
-// }
-
-// homeEl.onmouseleave = function () {
-//     homeEl.style.height = "130px";
-//     line1.style.transform = "rotate(-13deg) scaleX(1)";
-// }
 
 //---------------------------------------------------------
 
@@ -484,7 +413,7 @@ menuButton.onclick = function () {
     unline4.style.opacity = "100%"
     unline5.style.width = "145px"
     unline5.style.opacity = "100%"
-    unline6.style.width = "61px"
+    unline6.style.width = "75px"
     unline6.style.opacity = "100%"
     unline7.style.width = "47px"
     unline7.style.opacity = "100%"
@@ -556,7 +485,7 @@ window.onscroll = function () {
         unline4.style.opacity = "100%"
         unline5.style.width = "145px"
         unline5.style.opacity = "100%"
-        unline6.style.width = "61px"
+        unline6.style.width = "75px"
         unline6.style.opacity = "100%"
         unline7.style.width = "47px"
         unline7.style.opacity = "100%"
@@ -650,81 +579,4 @@ upBotton.onclick = function () {
 
 
 
-//-----------------delete just for test --------------------
 
-let containerDiv = document.querySelector(".container")
-let tasksDiv = document.querySelector(".tasks")
-let subBtn = document.querySelector(".add")
-let inpuText = document.querySelector(".input")
-
-// ==helper button to clear local location
-// let temp = document.createElement("button")
-// temp.setAttribute("class", " add")
-// containerDiv.append(temp)
-// temp.onclick = function () { window.localStorage.clear() }
-//===========================================================
-
-let count = 0;
-let arr = [0];
-if (window.localStorage.getItem("counter") !== "0") {
-    count = window.localStorage.getItem("counter");
-}
-else {
-    count = 0;
-}
-tasksDiv.id = window.localStorage.getItem("hasTasks")
-tasksDiv.innerHTML = window.localStorage.getItem("tasksDiv")
-
-if (tasksDiv.id === "Done") {
-    arr = window.localStorage.getItem("arrayForRemovedItems").split(",").sort();
-    console.log(arr)
-}
-subBtn.onclick = function () {
-    vvv = inpuText.value
-    let textt = document.createTextNode(`${vvv}`)
-    let newEleDiv = document.createElement("div")
-    newEleDiv.appendChild(textt)
-    tasksDiv.setAttribute("id", `Done`)
-    newEleDiv.setAttribute("class", "inside")
-    window.localStorage.setItem("counter", ++count)
-    if (arr[1] === undefined) {
-        window.localStorage.setItem("arrayForRemovedItems", arr)
-        arr = window.localStorage.getItem("arrayForRemovedItems").split(",")
-    }
-    tasksDiv.appendChild(newEleDiv);
-    let deleteBtn = document.createElement("button")
-    let DeleteWord = document.createTextNode(`Delete`)
-    deleteBtn.appendChild(DeleteWord)
-    deleteBtn.setAttribute("class", "btnDel")
-
-    if (arr.length === 1) {
-        deleteBtn.setAttribute("id", `${count}`)
-    }
-    else {
-        let tempp = window.localStorage.getItem("arrayForRemovedItems").split(",").pop()
-        console.log(`tempp is ${tempp}`)
-        deleteBtn.setAttribute("id", `${arr.pop()}`)
-        window.localStorage.setItem("arrayForRemovedItems", arr)
-        arr = window.localStorage.getItem("arrayForRemovedItems").split(",")
-    }
-    deleteBtn.setAttribute("onClick", "reply_click(this.id)")
-    newEleDiv.appendChild(deleteBtn)
-    window.localStorage.setItem("tasksDiv", tasksDiv.innerHTML)
-    window.localStorage.setItem("hasTasks", tasksDiv.id)
-}
-function reply_click(clicked_id) {
-    arr[arr.length] = clicked_id;
-
-    let item = document.getElementById(clicked_id).parentElement
-    item.remove()
-    window.localStorage.setItem("arrayForRemovedItems", arr)
-    window.localStorage.setItem("counter", --count)
-    window.localStorage.setItem("tasksDiv", tasksDiv.innerHTML)
-    if (window.localStorage.getItem("counter") === "0") {
-        arr = [0];
-        window.localStorage.setItem("arrayForRemovedItems", arr);
-        window.localStorage.setItem("hasTasks", "null")
-    }
-}
-
-//-----------------delete just for test --------------------
